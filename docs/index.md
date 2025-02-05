@@ -1,17 +1,12 @@
-# Welcome to MkDocs
+# Mu-Pipelines Documentation 🚀
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Welcome to the **Mu-Pipelines** documentation!  
+Mu-Pipelines is a **configuration-driven data pipeline platform** that enables easy **data ingestion, transformation, and orchestration** without complex coding.
 
-## Commands
+## 🌟 Features
+- **Flexible Data Ingestion**: Read from CSV, JSON, Parquet, Databases, and more.
+- **Powerful Transformations**: SQL and Python-based processing.
+- **Seamless Data Integration**: Supports Iceberg, Delta Lake, and more.
+- **Lightweight & Scalable**: Configuration-based, no heavy setup required.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+📖 **Start by reading the [Getting Started](getting-started.md) guide!**
