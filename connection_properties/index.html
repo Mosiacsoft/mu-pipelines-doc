@@ -9,10 +9,6 @@
       
       
       
-        <link rel="prev" href="..">
-      
-      
-        <link rel="next" href="../faq/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +16,7 @@
     
     
       
-        <title>Getting Started - Mu-Pipelines Docs</title>
+        <title>Connection properties - Mu-Pipelines Docs</title>
       
     
     
@@ -61,11 +57,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#getting-started" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -98,7 +89,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Getting Started
+              Connection properties
             
           </span>
         </div>
@@ -233,31 +224,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Getting Started
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../getting-started/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -267,80 +237,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-install-mu-pipelines" class="md-nav__link">
-    <span class="md-ellipsis">
-      1️ Install Mu-Pipelines
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-create-config-files" class="md-nav__link">
-    <span class="md-ellipsis">
-      2 Create Config files
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-run-a-sample-config-file" class="md-nav__link">
-    <span class="md-ellipsis">
-      3 Run a sample config file
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-run-config-using-spark-submit" class="md-nav__link">
-    <span class="md-ellipsis">
-      4 Run config using spark submit
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#run-config-using-airflow" class="md-nav__link">
-    <span class="md-ellipsis">
-      Run config using Airflow
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-chain-different-configs-to-meet-business-needs" class="md-nav__link">
-    <span class="md-ellipsis">
-      5 Chain different config's to meet business needs
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -446,70 +342,6 @@
   
   
   
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-install-mu-pipelines" class="md-nav__link">
-    <span class="md-ellipsis">
-      1️ Install Mu-Pipelines
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-create-config-files" class="md-nav__link">
-    <span class="md-ellipsis">
-      2 Create Config files
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-run-a-sample-config-file" class="md-nav__link">
-    <span class="md-ellipsis">
-      3 Run a sample config file
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-run-config-using-spark-submit" class="md-nav__link">
-    <span class="md-ellipsis">
-      4 Run config using spark submit
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#run-config-using-airflow" class="md-nav__link">
-    <span class="md-ellipsis">
-      Run config using Airflow
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-chain-different-configs-to-meet-business-needs" class="md-nav__link">
-    <span class="md-ellipsis">
-      5 Chain different config's to meet business needs
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -528,55 +360,9 @@
   
 
 
-<h1 id="getting-started">Getting Started 🚀</h1>
-<p>Welcome! This guide helps you set up and run Mu-Pipelines.</p>
-<h2 id="1-install-mu-pipelines">1️ Install Mu-Pipelines</h2>
-<p>Ensure you have Python 3 installed, then run:
-```sh
-pip install mu-pipelines</p>
-<h2 id="2-create-config-files">2 Create Config files</h2>
-<p>Our config files are divided in two section execute and destination </p>
-<p>Configuration Parameters:
-execute-xx: This can be ingesting data from source or transforming using sql/python.
-destination: The destination where data should be stored.</p>
-<p>Refer config documentation for list of execute and destination command available </p>
-<h2 id="3-run-a-sample-config-file">3 Run a sample config file</h2>
-<p>In your notebook/py file add below code </p>
-<p>from mu_pipelines_driver.run_config import run_config
-df = run_config(
-    [
-        {
-            "execution": [
-                {
-                    "type": "CSVReadCommand",
-                    "file_location": "/home/iceberg/data/file/people.csv",
-                    "delimiter": ",",
-                    "quotes": "\"",
-                    "additional_attributes": [
-                        { "key": "header", "value": "True" }
-                    ]
-                }
-            ],
-            "destination": [
-                {
-                    "type": "table",
-                    "table_name": "crm.raw.people",
-                    "mode": "overwrite"
-                }
-            ]
-        }
-    ],
-    {
-        "library": "spark"
-    },
-    {
-        "connections":[]
-    }
-)</p>
-<h2 id="4-run-config-using-spark-submit">4 Run config using spark submit</h2>
-<h2 id="run-config-using-airflow">Run config using Airflow</h2>
-<h2 id="5-chain-different-configs-to-meet-business-needs">5 Chain different config's to meet business needs</h2>
-<p>🎯 Want to add a custom connector? Stay tuned for developer guides!</p>
+  <h1>Connection properties</h1>
+
+<p>comming soon </p>
 
 
 
