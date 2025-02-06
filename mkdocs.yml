@@ -6,7 +6,7 @@ nav:
   - Home: index.md
   - Getting Started: getting-started.md
   - Execute Commands: execute-command\execute-command.md
-  - Destination Commands: destination-commands\destination-command.md
+  - Destination Commands: destination-command\destination-command.md
   - Streaming Commands: streaming-commands\streaming-command.md
   - FAQ: faq.md
 
