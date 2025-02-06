@@ -5,9 +5,8 @@ theme:
 nav:
   - Home: index.md
   - Getting Started: getting-started.md
-  - Configuration: config.md
-  - Running Pipelines: running.md
-  - Connectors: connectors.md
+  - Execute Commands: execute-command
+  - Destination Commands: destinations-commands
   - FAQ: faq.md
 
 repo_url: "https://github.com/your-repo/mu-pipelines"
