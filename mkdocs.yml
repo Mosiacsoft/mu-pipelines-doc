@@ -5,8 +5,9 @@ theme:
 nav:
   - Home: index.md
   - Getting Started: getting-started.md
-  - Execute Commands: execute-command
-  - Destination Commands: destinations-commands
+  - Execute Commands: execute-command\execute-command.md
+  - Destination Commands: destinations-commands\destination-command.md
+  - Streaming Commands: streaming-commands\streaming-command.md
   - FAQ: faq.md
 
 repo_url: "https://github.com/your-repo/mu-pipelines"
