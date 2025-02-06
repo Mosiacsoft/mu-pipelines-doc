@@ -5,9 +5,18 @@ theme:
 nav:
   - Home: index.md
   - Getting Started: getting-started.md
-  - Execute Commands: execute-command\execute-command.md
-  - Destination Commands: destination-command\destination-command.md
-  - Streaming Commands: streaming-command\streaming-command.md
+  - Execute Commands: 
+      Sample Configuration: execute-command\execute-command.md
+      Read from CSV: execute-command\CSVRead.md
+      Read from Kafka: execute-command\kafka.md
+  - Destination Commands: 
+      Sample Configuration: destination-command\destination-command.md
+      Write to CSV: destination-command\csvWrite.md
+      Store to Iceberg: destination-command\iceberg.md
+  - Streaming Commands: 
+      Sample Configuration: streaming-command\streaming-command.md
+      Kafka to Iceberg Configuration: streaming-command\kafka-iceberg.md
+
   - FAQ: faq.md
 
 repo_url: "https://mosiacsoft.github.io/mu-pipelines-doc/"
