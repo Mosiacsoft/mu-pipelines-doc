@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#getting-started" class="md-skip">
+        <a href="#welcome-to-mu-pipelines" class="md-skip">
           Skip to content
         </a>
       
@@ -286,7 +286,7 @@
         <li class="md-nav__item">
   <a href="#1-install-mu-pipelines" class="md-nav__link">
     <span class="md-ellipsis">
-      1️ Install Mu-Pipelines
+      1️⃣ Install Mu-Pipelines
     </span>
   </a>
   
@@ -295,16 +295,31 @@
         <li class="md-nav__item">
   <a href="#2-create-config-files" class="md-nav__link">
     <span class="md-ellipsis">
-      2 Create Config files
+      2️⃣ Create Config Files
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="2️⃣ Create Config Files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuration-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration Parameters:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#3-run-a-sample-config-file" class="md-nav__link">
     <span class="md-ellipsis">
-      3 Run a sample config file
+      3️⃣ Run a Sample Config File
     </span>
   </a>
   
@@ -313,25 +328,25 @@
         <li class="md-nav__item">
   <a href="#4-run-config-using-spark-submit" class="md-nav__link">
     <span class="md-ellipsis">
-      4 Run config using spark submit
+      4️⃣ Run Config Using Spark Submit
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#run-config-using-airflow" class="md-nav__link">
+  <a href="#5-run-config-using-airflow" class="md-nav__link">
     <span class="md-ellipsis">
-      Run config using Airflow
+      5️⃣ Run Config Using Airflow
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-chain-different-configs-to-meet-business-needs" class="md-nav__link">
+  <a href="#6-chain-different-configurations-to-meet-business-needs" class="md-nav__link">
     <span class="md-ellipsis">
-      5 Chain different config's to meet business needs
+      6️⃣ Chain Different Configurations to Meet Business Needs
     </span>
   </a>
   
@@ -700,7 +715,7 @@
         <li class="md-nav__item">
   <a href="#1-install-mu-pipelines" class="md-nav__link">
     <span class="md-ellipsis">
-      1️ Install Mu-Pipelines
+      1️⃣ Install Mu-Pipelines
     </span>
   </a>
   
@@ -709,16 +724,31 @@
         <li class="md-nav__item">
   <a href="#2-create-config-files" class="md-nav__link">
     <span class="md-ellipsis">
-      2 Create Config files
+      2️⃣ Create Config Files
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="2️⃣ Create Config Files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuration-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration Parameters:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#3-run-a-sample-config-file" class="md-nav__link">
     <span class="md-ellipsis">
-      3 Run a sample config file
+      3️⃣ Run a Sample Config File
     </span>
   </a>
   
@@ -727,25 +757,25 @@
         <li class="md-nav__item">
   <a href="#4-run-config-using-spark-submit" class="md-nav__link">
     <span class="md-ellipsis">
-      4 Run config using spark submit
+      4️⃣ Run Config Using Spark Submit
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#run-config-using-airflow" class="md-nav__link">
+  <a href="#5-run-config-using-airflow" class="md-nav__link">
     <span class="md-ellipsis">
-      Run config using Airflow
+      5️⃣ Run Config Using Airflow
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-chain-different-configs-to-meet-business-needs" class="md-nav__link">
+  <a href="#6-chain-different-configurations-to-meet-business-needs" class="md-nav__link">
     <span class="md-ellipsis">
-      5 Chain different config's to meet business needs
+      6️⃣ Chain Different Configurations to Meet Business Needs
     </span>
   </a>
   
@@ -767,55 +797,59 @@
 
 
 
-<h1 id="getting-started">Getting Started 🚀</h1>
-<p>Welcome! This guide helps you set up and run Mu-Pipelines.</p>
-<h2 id="1-install-mu-pipelines">1️ Install Mu-Pipelines</h2>
-<p>Ensure you have Python 3 installed, then run:
-```sh
-pip install mu-pipelines</p>
-<h2 id="2-create-config-files">2 Create Config files</h2>
-<p>Our config files are divided in two section execute and destination </p>
-<p>Configuration Parameters:
-execute-xx: This can be ingesting data from source or transforming using sql/python.
-destination: The destination where data should be stored.</p>
-<p>Refer config documentation for list of execute and destination command available </p>
-<h2 id="3-run-a-sample-config-file">3 Run a sample config file</h2>
-<p>In your notebook/py file add below code </p>
-<p>from mu_pipelines_driver.run_config import run_config
+<h1 id="welcome-to-mu-pipelines">Welcome to Mu-Pipelines!</h1>
+<p>This guide will help you set up and run Mu-Pipelines.</p>
+<h2 id="1-install-mu-pipelines">1️⃣ Install Mu-Pipelines</h2>
+<p>Ensure you have Python 3 installed, then run:</p>
+<pre><code class="language-sh">pip install mu-pipelines
+</code></pre>
+<h2 id="2-create-config-files">2️⃣ Create Config Files</h2>
+<p>Our config files are divided into two sections: <code>execute</code> and <code>destination</code>.</p>
+<h3 id="configuration-parameters">Configuration Parameters:</h3>
+<ul>
+<li><strong>execute-xx</strong>: This can be ingesting data from a source or transforming using SQL/Python.</li>
+<li><strong>destination</strong>: The destination where data should be stored.</li>
+</ul>
+<p>Refer to the config documentation for a list of available <code>execute</code> and <code>destination</code> commands.</p>
+<h2 id="3-run-a-sample-config-file">3️⃣ Run a Sample Config File</h2>
+<p>In your notebook or Python file, add the following code:</p>
+<pre><code class="language-python">from mu_pipelines_driver.run_config import run_config
+
 df = run_config(
     [
         {
-            "execution": [
+            &quot;execution&quot;: [
                 {
-                    "type": "CSVReadCommand",
-                    "file_location": "/home/iceberg/data/file/people.csv",
-                    "delimiter": ",",
-                    "quotes": "\"",
-                    "additional_attributes": [
-                        { "key": "header", "value": "True" }
+                    &quot;type&quot;: &quot;CSVReadCommand&quot;,
+                    &quot;file_location&quot;: &quot;/home/iceberg/data/file/people.csv&quot;,
+                    &quot;delimiter&quot;: &quot;,&quot;,
+                    &quot;quotes&quot;: &quot;\&quot;&quot;,
+                    &quot;additional_attributes&quot;: [
+                        {&quot;key&quot;: &quot;header&quot;, &quot;value&quot;: &quot;True&quot;}
                     ]
                 }
             ],
-            "destination": [
+            &quot;destination&quot;: [
                 {
-                    "type": "table",
-                    "table_name": "crm.raw.people",
-                    "mode": "overwrite"
+                    &quot;type&quot;: &quot;table&quot;,
+                    &quot;table_name&quot;: &quot;crm.raw.people&quot;,
+                    &quot;mode&quot;: &quot;overwrite&quot;
                 }
             ]
         }
     ],
-    {
-        "library": "spark"
-    },
-    {
-        "connections":[]
-    }
-)</p>
-<h2 id="4-run-config-using-spark-submit">4 Run config using spark submit</h2>
-<h2 id="run-config-using-airflow">Run config using Airflow</h2>
-<h2 id="5-chain-different-configs-to-meet-business-needs">5 Chain different config's to meet business needs</h2>
-<p>🎯 Want to add a custom connector? Stay tuned for developer guides!</p>
+    {&quot;library&quot;: &quot;spark&quot;},
+    {&quot;connections&quot;: []}
+)
+</code></pre>
+<h2 id="4-run-config-using-spark-submit">4️⃣ Run Config Using Spark Submit</h2>
+<p>Run your configuration using Spark Submit.</p>
+<h2 id="5-run-config-using-airflow">5️⃣ Run Config Using Airflow</h2>
+<p>Execute the config using Airflow for workflow orchestration.</p>
+<h2 id="6-chain-different-configurations-to-meet-business-needs">6️⃣ Chain Different Configurations to Meet Business Needs</h2>
+<p>Mu-Pipelines allows you to chain multiple configurations together to address complex business requirements.</p>
+<hr />
+<p>🎯 <strong>Want to add a custom connector?</strong> Stay tuned for developer guides!</p>
 
 
 
