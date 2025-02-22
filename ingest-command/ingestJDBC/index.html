@@ -9,10 +9,6 @@
       
       
       
-        <link rel="prev" href="../../execute-command/kafka/">
-      
-      
-        <link rel="next" href="../iceberg/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +16,7 @@
     
     
       
-        <title>Sample Configuration - Mu-Pipelines Docs</title>
+        <title>IngestJDBC Command Documentation - Mu-Pipelines Docs</title>
       
     
     
@@ -61,6 +57,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#ingestjdbc-command-documentation" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -93,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Sample Configuration
+              IngestJDBC Command Documentation
             
           </span>
         </div>
@@ -288,29 +289,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../execute-command/execute-command/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Sample Configuration
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../execute-command/CSVRead/" class="md-nav__link">
+      <a href="../ingestCSV/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -332,7 +311,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../execute-command/kafka/" class="md-nav__link">
+      <a href="../ingestKafka/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -358,26 +337,24 @@
       
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    Destination Commands
+    Transform Commands
     
   </span>
   
@@ -385,10 +362,10 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Destination Commands
+            Transform Commands
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -396,66 +373,14 @@
                 
   
   
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    Sample Configuration
-    
-  </span>
-  
-
-      </a>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
   
   
     <li class="md-nav__item">
-      <a href="../csvWrite.md" class="md-nav__link">
+      <a href="../../transform-command/transformSQL/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Write to CSV
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../iceberg/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Store to Iceberg
+    SQL Transformation
     
   </span>
   
@@ -494,7 +419,7 @@
             
   
   <span class="md-ellipsis">
-    Streaming Commands
+    Destination Commands
     
   </span>
   
@@ -505,7 +430,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            Streaming Commands
+            Destination Commands
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -516,11 +441,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../streaming-command/streaming-command/" class="md-nav__link">
+      <a href="../../destination-command/destinationCSV/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Sample Configuration
+    Write to CSV
     
   </span>
   
@@ -538,7 +463,72 @@
   
   
     <li class="md-nav__item">
-      <a href="../../streaming-command/kafka-iceberg/" class="md-nav__link">
+      <a href="../../destination-command/destinationIceberg/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Store to Iceberg
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Streaming Commands
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Streaming Commands
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../streaming-command/stream-kafka-iceberg/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -598,6 +588,61 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ingestjdbc-command-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      IngestJDBC Command Structure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detailed-explanation-of-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Detailed Explanation of Parameters
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-ingestjdbc-command-with-dynamic-incremental-load" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example IngestJDBC Command with Dynamic Incremental Load
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -613,9 +658,112 @@
 
 
 
-  <h1>Sample Configuration</h1>
-
-
+<h1 id="ingestjdbc-command-documentation">IngestJDBC Command Documentation</h1>
+<h3 id="overview"><strong>Overview</strong></h3>
+<p>The <strong>IngestJDBC</strong> command is used to ingest data from a JDBC-compatible database into your pipeline. This command allows you to extract data from relational databases and bring it into your data pipeline. It supports <strong>incremental loading</strong>, dynamically fetching the last processed value from the source database. This improves performance by only processing new or modified data since the last execution.</p>
+<p>With the ability to define <strong>lower</strong> and <strong>upper bounds</strong>, the system can dynamically query the source database for the incremental values based on a specific column, ensuring only the relevant data is ingested.</p>
+<h3 id="ingestjdbc-command-structure"><strong>IngestJDBC Command Structure</strong></h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>type</code></td>
+<td>String</td>
+<td>✅ Yes</td>
+<td>The type of command, always set to <code>IngestJDBC</code>.</td>
+</tr>
+<tr>
+<td><code>connection_name</code></td>
+<td>String</td>
+<td>✅ Yes</td>
+<td>The name of the connection to the database (referenced from Connection Properties).</td>
+</tr>
+<tr>
+<td><code>query</code></td>
+<td>String</td>
+<td>✅ Yes</td>
+<td>The SQL query to retrieve data from the source database.</td>
+</tr>
+<tr>
+<td><code>lower_bound_query</code></td>
+<td>String</td>
+<td>❌ No</td>
+<td>The SQL query used to get the lower bound value for incremental loading.</td>
+</tr>
+<tr>
+<td><code>upper_bound_query</code></td>
+<td>String</td>
+<td>❌ No</td>
+<td>The SQL query used to get the upper bound value for incremental loading.</td>
+</tr>
+<tr>
+<td><code>destination</code></td>
+<td>Object</td>
+<td>✅ Yes</td>
+<td>The destination configuration where the ingested data will be written.</td>
+</tr>
+<tr>
+<td><code>batch_size</code></td>
+<td>Integer</td>
+<td>❌ No</td>
+<td>The number of rows to fetch per batch during data ingestion.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="detailed-explanation-of-parameters"><strong>Detailed Explanation of Parameters</strong></h3>
+<ul>
+<li>
+<p><strong><code>type</code></strong>: Always set to <code>"IngestJDBC"</code>. This identifies the command type as a JDBC ingestion command.</p>
+</li>
+<li>
+<p><strong><code>connection_name</code></strong>: Specifies the connection to be used for connecting to the source database. The connection name must correspond to a pre-defined connection in the <strong>Connection Properties</strong> section.</p>
+</li>
+<li>
+<p><strong><code>query</code></strong>: The SQL query used to retrieve data from the source database. It should include a condition based on the <strong>incremental_column</strong> if incremental loading is enabled.</p>
+</li>
+<li>
+<p><strong><code>lower_bound_query</code></strong>: An optional SQL query that dynamically fetches the lower bound (the starting point) for the incremental load. This value can be used to determine the beginning of the range of data to be fetched. For example, it could be the maximum value of the <code>incremental_column</code> from the previous ingestion.</p>
+</li>
+<li>
+<p><strong><code>upper_bound_query</code></strong>: An optional SQL query that dynamically fetches the upper bound (the ending point) for the incremental load. This value can be used to determine the end of the range for data to be fetched. This ensures that only data within this range will be ingested in the next execution.</p>
+</li>
+<li>
+<p><strong><code>batch_size</code></strong>: Defines the number of rows to fetch per batch from the source database. Fetching data in batches can improve performance and prevent memory overload.</p>
+</li>
+</ul>
+<hr />
+<h3 id="example-ingestjdbc-command-with-dynamic-incremental-load"><strong>Example IngestJDBC Command with Dynamic Incremental Load</strong></h3>
+<p>Here’s an example of how the <strong>IngestJDBC</strong> command might be configured to perform incremental loading with dynamically fetched lower and upper bounds:</p>
+<p>```json
+{
+  "execution": [
+    {
+      "type": "IngestJDBC",
+      "name": "jdbc_connection_customers",
+      "connection_name": "jdbc_connection",
+      "query": "SELECT * FROM crm.customers WHERE updated_at BETWEEN '{{lower_bound_value}}' AND '{{upper_bound_value}}'",
+      "lower_bound_query": "SELECT last_run from stats.incremental where name='jdbc_connection_customers'",
+      "upper_bound_query": "SELECT MAX(updated_at) FROM crm.customers",
+      "incremental_value_storage": {
+        "type": "table",
+        "connection": "stats.incremental",
+      }
+      "batch_size": 1000
+    }
+  ]
+}</p>
+<h3 id="conclusion"><strong>Conclusion</strong></h3>
+<p>The "IngestJDBC" command with dynamic lower and upper bound queries enables more flexible and efficient incremental data loading. By querying the database for the appropriate range of data (via lower_bound_query and upper_bound_query), this approach avoids redundant data loads and ensures that only relevant data is processed.</p>
+<p>This dynamic approach to handling incremental data ingestion is ideal for large databases or when frequent data loads are required, as it reduces the amount of data ingested and improves pipeline performance.</p>
+<p>By leveraging SQL queries for both incremental bounds and the actual data fetch, you gain fine-grained control over the data extraction process. This configuration is highly customizable, allowing you to handle a variety of data sources and update scenarios.</p>
 
 
 

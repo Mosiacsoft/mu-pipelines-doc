@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../CSVRead/">
+        <link rel="prev" href="../ingestCSV/">
       
       
-        <link rel="next" href="../../destination-command/destination-command/">
+        <link rel="next" href="../../transform-command/transformSQL/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -295,29 +295,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../execute-command/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Sample Configuration
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../CSVRead/" class="md-nav__link">
+      <a href="../ingestCSV/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -525,7 +503,7 @@
             
   
   <span class="md-ellipsis">
-    Destination Commands
+    Transform Commands
     
   </span>
   
@@ -536,7 +514,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Destination Commands
+            Transform Commands
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -547,55 +525,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../destination-command/destination-command/" class="md-nav__link">
+      <a href="../../transform-command/transformSQL/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Sample Configuration
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../destination-command/csvWrite.md" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Write to CSV
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../destination-command/iceberg/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Store to Iceberg
+    SQL Transformation
     
   </span>
   
@@ -634,7 +568,7 @@
             
   
   <span class="md-ellipsis">
-    Streaming Commands
+    Destination Commands
     
   </span>
   
@@ -645,7 +579,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            Streaming Commands
+            Destination Commands
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -656,11 +590,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../streaming-command/streaming-command/" class="md-nav__link">
+      <a href="../../destination-command/destinationCSV/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Sample Configuration
+    Write to CSV
     
   </span>
   
@@ -678,7 +612,72 @@
   
   
     <li class="md-nav__item">
-      <a href="../../streaming-command/kafka-iceberg/" class="md-nav__link">
+      <a href="../../destination-command/destinationIceberg/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Store to Iceberg
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Streaming Commands
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Streaming Commands
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../streaming-command/stream-kafka-iceberg/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -871,7 +870,7 @@
 <pre><code class="language-json">{
   &quot;execution&quot;: [
     {
-      &quot;type&quot;: &quot;KafkaRead&quot;,
+      &quot;type&quot;: &quot;IngestKafka&quot;,
       &quot;bootstrap_servers&quot;: &quot;localhost:9092&quot;,
       &quot;topic&quot;: &quot;example-topic&quot;,
       &quot;group_id&quot;: &quot;batch-consumer-group&quot;,
@@ -1044,12 +1043,6 @@
 </ul>
 <hr />
 <h3 id="related-commands">Related Commands</h3>
-<ul>
-<li><strong>KafkaWriteCommand</strong>: Write data to a Kafka topic in batch mode.</li>
-<li><strong>BatchProcessCommand</strong>: For scheduling periodic or batch processing tasks.</li>
-<li><strong>FileSinkCommand</strong>: To write the consumed Kafka data to a file (e.g., CSV, Parquet).</li>
-<li><strong>TransformCommand</strong>: For transforming Kafka data before further processing or storing.</li>
-</ul>
 <hr />
 <h3 id="conclusion">Conclusion</h3>
 <p>The <strong>KafkaReadCommand</strong> in <strong>batch mode</strong> is a powerful way to periodically ingest data from Kafka topics. By configuring parameters like <strong><code>batch_interval</code></strong>, <strong><code>max_poll_records</code></strong>, and <strong><code>auto_offset_reset</code></strong>, you can control how and when Kafka data is ingested, making it well-suited for periodic or batch-based processing in your data pipeline.</p>

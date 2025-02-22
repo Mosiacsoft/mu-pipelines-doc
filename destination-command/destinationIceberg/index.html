@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../../getting-started/">
+        <link rel="prev" href="../destinationCSV/">
       
       
-        <link rel="next" href="../CSVRead/">
+        <link rel="next" href="../../streaming-command/stream-kafka-iceberg/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Sample Configuration - Mu-Pipelines Docs</title>
+        <title>Store to Iceberg - Mu-Pipelines Docs</title>
       
     
     
@@ -61,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#iceberg-as-destination-documentation" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -93,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Sample Configuration
+              Store to Iceberg
             
           </span>
         </div>
@@ -249,19 +254,17 @@
       
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -276,7 +279,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Execute Commands
@@ -287,40 +290,10 @@
                 
   
   
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    Sample Configuration
-    
-  </span>
-  
-
-      </a>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
   
   
     <li class="md-nav__item">
-      <a href="../CSVRead/" class="md-nav__link">
+      <a href="../../ingest-command/ingestCSV/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -342,7 +315,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../kafka/" class="md-nav__link">
+      <a href="../../ingest-command/ingestKafka/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -385,7 +358,7 @@
             
   
   <span class="md-ellipsis">
-    Destination Commands
+    Transform Commands
     
   </span>
   
@@ -395,6 +368,73 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Transform Commands
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../transform-command/transformSQL/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SQL Transformation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Destination Commands
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Destination Commands
           </label>
@@ -407,29 +447,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../destination-command/destination-command/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Sample Configuration
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../destination-command/csvWrite.md" class="md-nav__link">
+      <a href="../destinationCSV/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -448,10 +466,29 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../destination-command/iceberg/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Store to Iceberg
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -461,6 +498,126 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#iceberg-as-destination-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Iceberg as Destination Documentation 📊
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Iceberg as Destination Documentation 📊">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#json-configuration-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      JSON Configuration Example
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mode-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mode Options
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuring-spark-with-iceberg-as-the-default-catalog" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuring Spark with Iceberg as the Default Catalog
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-use-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Use Case
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example Use Case">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#json-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      JSON Configuration:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      Behavior
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#related-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Related Commands
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -487,10 +644,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -502,8 +659,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Streaming Commands
           </label>
@@ -516,29 +673,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../streaming-command/streaming-command/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Sample Configuration
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../streaming-command/kafka-iceberg/" class="md-nav__link">
+      <a href="../../streaming-command/stream-kafka-iceberg/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -599,6 +734,116 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#iceberg-as-destination-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Iceberg as Destination Documentation 📊
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Iceberg as Destination Documentation 📊">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#json-configuration-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      JSON Configuration Example
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mode-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mode Options
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuring-spark-with-iceberg-as-the-default-catalog" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuring Spark with Iceberg as the Default Catalog
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-use-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Use Case
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example Use Case">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#json-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      JSON Configuration:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      Behavior
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#related-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Related Commands
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -613,9 +858,125 @@
 
 
 
-  <h1>Sample Configuration</h1>
+  <h1>Store to Iceberg</h1>
 
-
+<h2 id="iceberg-as-destination-documentation"><strong>Iceberg as Destination Documentation 📊</strong></h2>
+<p>The <strong>Iceberg</strong> destination configuration allows you to define where the data will be written in the pipeline. The destination can specify an <strong>Iceberg table</strong> where data will be loaded, and it supports different <strong>modes</strong> for managing data.</p>
+<h3 id="json-configuration-example"><strong>JSON Configuration Example</strong></h3>
+<pre><code class="language-json">{
+  &quot;destination&quot;: [
+    {
+      &quot;type&quot;: &quot;table&quot;,
+      &quot;table_name&quot;: &quot;crm.raw.people&quot;,
+      &quot;mode&quot;: &quot;overwrite&quot;
+    }
+  ]
+}
+</code></pre>
+<hr />
+<h3 id="parameters"><strong>Parameters</strong></h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>type</code></td>
+<td>String</td>
+<td>✅ Yes</td>
+<td>The destination type (<code>table</code> for Iceberg tables).</td>
+</tr>
+<tr>
+<td><code>table_name</code></td>
+<td>String</td>
+<td>✅ Yes</td>
+<td>The name of the Iceberg table where data will be written.</td>
+</tr>
+<tr>
+<td><code>mode</code></td>
+<td>String</td>
+<td>✅ Yes</td>
+<td>Defines how the data is written to the table. Possible values: <code>overwrite</code>, <code>append</code>, etc.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="mode-options"><strong>Mode Options</strong></h3>
+<ul>
+<li><strong><code>overwrite</code></strong>: Replaces the data in the specified table with the new data. Any existing records in the table will be deleted.</li>
+<li><strong><code>append</code></strong>: Adds the new data to the existing records in the table without modifying the existing data.</li>
+</ul>
+<hr />
+<h3 id="configuring-spark-with-iceberg-as-the-default-catalog"><strong>Configuring Spark with Iceberg as the Default Catalog</strong></h3>
+<p>To ensure that <strong>Apache Spark</strong> can interact with <strong>Iceberg</strong> as the default catalog when using it as a destination, you must configure Spark with the appropriate catalog settings. By default, Spark uses <strong>Hive</strong> as its catalog. To set Iceberg as the default, follow these steps:</p>
+<ol>
+<li><strong>Add Iceberg as a dependency</strong>:
+   You need to add the <strong>Iceberg Spark extension</strong> to your Spark setup. Ensure the correct version of Iceberg is available in your Spark environment. Add the following dependency to your Spark session configuration:</li>
+</ol>
+<p><code>bash
+   --packages org.apache.iceberg:iceberg-spark3-runtime:0.13.1</code></p>
+<p>This will include the necessary Iceberg libraries for Spark.</p>
+<ol>
+<li><strong>Configure the Default Catalog</strong>:
+   To set Iceberg as the default catalog in Spark, update the <strong>Spark session</strong> configuration. You can set Iceberg as the default catalog by using the following settings:</li>
+</ol>
+<p><code>bash
+   spark.sql.catalog.spark_catalog org.apache.iceberg.spark.SparkSessionCatalog
+   spark.sql.catalog.spark_catalog.type hadoop
+   spark.sql.catalog.spark_catalog.warehouse /path/to/warehouse</code></p>
+<ul>
+<li><code>spark_catalog</code> refers to the catalog in use (in this case, Iceberg).</li>
+<li>The <code>warehouse</code> location should point to the directory where your Iceberg tables are stored.</li>
+</ul>
+<p>With this configuration, Spark will use <strong>Iceberg</strong> as the default catalog for reading and writing tables.</p>
+<ol>
+<li><strong>Setting Iceberg Table for the Destination</strong>:
+   Once Iceberg is set as the default catalog, you can specify the destination table in your pipeline configuration, like so:</li>
+</ol>
+<p><code>json
+   {
+     "destination": [
+       {
+         "type": "table",
+         "table_name": "crm.raw.people",
+         "mode": "overwrite"
+       }
+     ]
+   }</code></p>
+<p>Here, <code>crm.raw.people</code> refers to an Iceberg table that will be written to, and <strong>Spark</strong> will handle the interaction with the Iceberg catalog.</p>
+<hr />
+<h3 id="example-use-case"><strong>Example Use Case</strong></h3>
+<p><strong>Scenario:</strong> You want to write data to the <strong><code>crm.raw.people</code></strong> Iceberg table and overwrite any existing records.</p>
+<h4 id="json-configuration"><strong>JSON Configuration:</strong></h4>
+<pre><code class="language-json">{
+  &quot;destination&quot;: [
+    {
+      &quot;type&quot;: &quot;table&quot;,
+      &quot;table_name&quot;: &quot;crm.raw.people&quot;,
+      &quot;mode&quot;: &quot;overwrite&quot;
+    }
+  ]
+}
+</code></pre>
+<hr />
+<h3 id="behavior"><strong>Behavior</strong></h3>
+<ul>
+<li><strong><code>table_name</code></strong>: Specifies the Iceberg table where the data should be loaded.</li>
+<li><strong><code>mode</code></strong>: Controls how the data is written to the destination table. Choose <strong><code>overwrite</code></strong> to replace existing data or <strong><code>append</code></strong> to add new records to the existing data.</li>
+</ul>
+<hr />
+<h3 id="related-commands"><strong>Related Commands</strong></h3>
+<ul>
+<li><strong>TransformSQL</strong>: For transforming the data before writing it to the destination.</li>
+</ul>
+<hr />
+<h3 id="conclusion"><strong>Conclusion</strong></h3>
+<p>The <strong>Iceberg as Destination</strong> command provides a simple and effective way to write data into <strong>Iceberg tables</strong> with flexible write modes like <code>overwrite</code> and <code>append</code>. Configuring Spark with Iceberg as the default catalog makes it easier to work with Iceberg tables without needing to manually specify the catalog for each interaction. Once configured, use this command to manage your data pipeline outputs in a distributed, scalable table format.</p>
 
 
 

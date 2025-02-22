@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../execute-command/">
+        <link rel="prev" href="../../destination-command/destinationIceberg/">
       
       
-        <link rel="next" href="../kafka/">
+        <link rel="next" href="../../faq/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Read from CSV - Mu-Pipelines Docs</title>
+        <title>Kafka to Iceberg Configuration - Mu-Pipelines Docs</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#csvread-documentation" class="md-skip">
+        <a href="#streamkafkaiceberg-command-documentation" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Read from CSV
+              Kafka to Iceberg Configuration
             
           </span>
         </div>
@@ -254,19 +254,17 @@
       
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -281,7 +279,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Execute Commands
@@ -295,48 +293,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../execute-command/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Sample Configuration
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Read from CSV
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+      <a href="../../ingest-command/ingestCSV/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -346,132 +303,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#csvread-documentation" class="md-nav__link">
-    <span class="md-ellipsis">
-      CSVRead Documentation 📄
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="CSVRead Documentation 📄">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#json-configuration-example" class="md-nav__link">
-    <span class="md-ellipsis">
-      JSON Configuration Example
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#parameters" class="md-nav__link">
-    <span class="md-ellipsis">
-      Parameters
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#additional-attributes-example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Additional Attributes Example
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Additional Attributes Example">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example-of-header-attribute" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example of Header Attribute
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#example-use-case" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example Use Case
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Example Use Case">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#json-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      JSON Configuration:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#behavior" class="md-nav__link">
-    <span class="md-ellipsis">
-      Behavior
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#related-commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Related Commands
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conclusion
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -484,7 +315,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../kafka/" class="md-nav__link">
+      <a href="../../ingest-command/ingestKafka/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -527,7 +358,7 @@
             
   
   <span class="md-ellipsis">
-    Destination Commands
+    Transform Commands
     
   </span>
   
@@ -538,7 +369,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Destination Commands
+            Transform Commands
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -549,55 +380,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../destination-command/destination-command/" class="md-nav__link">
+      <a href="../../transform-command/transformSQL/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Sample Configuration
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../destination-command/csvWrite.md" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Write to CSV
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../destination-command/iceberg/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Store to Iceberg
+    SQL Transformation
     
   </span>
   
@@ -636,7 +423,7 @@
             
   
   <span class="md-ellipsis">
-    Streaming Commands
+    Destination Commands
     
   </span>
   
@@ -647,7 +434,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            Streaming Commands
+            Destination Commands
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -658,11 +445,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../streaming-command/streaming-command/" class="md-nav__link">
+      <a href="../../destination-command/destinationCSV/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Sample Configuration
+    Write to CSV
     
   </span>
   
@@ -680,7 +467,95 @@
   
   
     <li class="md-nav__item">
-      <a href="../../streaming-command/kafka-iceberg/" class="md-nav__link">
+      <a href="../../destination-command/destinationIceberg/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Store to Iceberg
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Streaming Commands
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Streaming Commands
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Kafka to Iceberg Configuration
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -690,6 +565,71 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#streamkafkaiceberg-command-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      StreamKafkaIceberg Command Structure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detailed-explanation-of-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Detailed Explanation of Parameters
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-streamkafkaiceberg-command" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example StreamKafkaIceberg Command
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -740,6 +680,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -748,110 +690,47 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#csvread-documentation" class="md-nav__link">
+  <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
-      CSVRead Documentation 📄
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="CSVRead Documentation 📄">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#json-configuration-example" class="md-nav__link">
-    <span class="md-ellipsis">
-      JSON Configuration Example
+      Overview
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#parameters" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#streamkafkaiceberg-command-structure" class="md-nav__link">
     <span class="md-ellipsis">
-      Parameters
+      StreamKafkaIceberg Command Structure
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#additional-attributes-example" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#detailed-explanation-of-parameters" class="md-nav__link">
     <span class="md-ellipsis">
-      Additional Attributes Example
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Additional Attributes Example">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example-of-header-attribute" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example of Header Attribute
+      Detailed Explanation of Parameters
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#example-use-case" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#example-streamkafkaiceberg-command" class="md-nav__link">
     <span class="md-ellipsis">
-      Example Use Case
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Example Use Case">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#json-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      JSON Configuration:
+      Example StreamKafkaIceberg Command
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#behavior" class="md-nav__link">
-    <span class="md-ellipsis">
-      Behavior
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#related-commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Related Commands
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#conclusion" class="md-nav__link">
     <span class="md-ellipsis">
       Conclusion
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -871,30 +750,11 @@
 
 
 
-  <h1>Read from CSV</h1>
-
-<h2 id="csvread-documentation"><strong>CSVRead Documentation 📄</strong></h2>
-<p>The <code>CSVRead</code> is used to read and load data from a <strong>CSV file</strong> into the pipeline. It provides configuration options like <strong>file location</strong>, <strong>delimiter</strong>, <strong>quote characters</strong>, and <strong>headers</strong> to accommodate different CSV formats.</p>
-<h3 id="json-configuration-example"><strong>JSON Configuration Example</strong></h3>
-<pre><code class="language-json">{
-  &quot;execution&quot;: [
-    {
-      &quot;type&quot;: &quot;CSVRead&quot;,
-      &quot;file_location&quot;: &quot;/home/iceberg/data/file/people.csv&quot;,
-      &quot;delimiter&quot;: &quot;,&quot;,
-      &quot;quotes&quot;: &quot;&quot;&quot;,
-      &quot;additional_attributes&quot;: [
-        {
-          &quot;key&quot;: &quot;header&quot;,
-          &quot;value&quot;: &quot;True&quot;
-        }
-      ]
-    }
-  ]
-}
-</code></pre>
-<hr />
-<h3 id="parameters"><strong>Parameters</strong></h3>
+<h1 id="streamkafkaiceberg-command-documentation">StreamKafkaIceberg Command Documentation</h1>
+<h3 id="overview"><strong>Overview</strong></h3>
+<p>The <strong>StreamKafkaIceberg</strong> command facilitates the streaming ingestion of data from Apache Kafka into an Iceberg table. This command is ideal for real-time data pipelines where you want to capture streaming data from Kafka topics and store it in Iceberg tables with ACID compliance and schema evolution capabilities.</p>
+<p>This command supports consuming data from Kafka topics in real-time and writing it to Iceberg tables, enabling you to leverage Iceberg's powerful features like partitioning, schema evolution, and efficient querying for analytical workloads.</p>
+<h3 id="streamkafkaiceberg-command-structure"><strong>StreamKafkaIceberg Command Structure</strong></h3>
 <table>
 <thead>
 <tr>
@@ -909,88 +769,112 @@
 <td><code>type</code></td>
 <td>String</td>
 <td>✅ Yes</td>
-<td>Specifies the type of the command (<code>CSVReadCommand</code>).</td>
+<td>Always set to <code>"StreamKafkaIceberg"</code>.</td>
 </tr>
 <tr>
-<td><code>file_location</code></td>
+<td><code>kafka_connection</code></td>
 <td>String</td>
 <td>✅ Yes</td>
-<td>The path to the CSV file to be read. Can be absolute or relative.</td>
+<td>The name of the Kafka connection (referenced from Connection Properties).</td>
 </tr>
 <tr>
-<td><code>delimiter</code></td>
+<td><code>topic</code></td>
 <td>String</td>
-<td>❌ No</td>
-<td>The character used to separate columns in the CSV (default is <code>,</code>).</td>
+<td>✅ Yes</td>
+<td>The Kafka topic to consume from.</td>
 </tr>
 <tr>
-<td><code>quotes</code></td>
+<td><code>iceberg_table</code></td>
 <td>String</td>
-<td>❌ No</td>
-<td>The character used for quoting text in CSV (default is <code>"</code>).</td>
+<td>✅ Yes</td>
+<td>The Iceberg table where the data will be written.</td>
 </tr>
 <tr>
-<td><code>additional_attributes</code></td>
-<td>Array</td>
+<td><code>checkpoint_location</code></td>
+<td>String</td>
+<td>✅ Yes</td>
+<td>The location for storing checkpoint information to track Kafka offsets.</td>
+</tr>
+<tr>
+<td><code>group_id</code></td>
+<td>String</td>
+<td>✅ Yes</td>
+<td>The Kafka consumer group ID used to track message consumption.</td>
+</tr>
+<tr>
+<td><code>format</code></td>
+<td>String</td>
+<td>✅ Yes</td>
+<td>The format to use for writing to the Iceberg table (e.g., <code>parquet</code>).</td>
+</tr>
+<tr>
+<td><code>poll_timeout_ms</code></td>
+<td>Integer</td>
 <td>❌ No</td>
-<td>Optional attributes to specify additional settings. Each attribute consists of a <code>key</code> and <code>value</code> pair. For example, you can specify if the CSV has headers.</td>
+<td>Timeout in milliseconds for polling data from Kafka (default: <code>1000</code>).</td>
+</tr>
+<tr>
+<td><code>max_offset</code></td>
+<td>Long</td>
+<td>❌ No</td>
+<td>The maximum offset to consume up to from Kafka (default: latest offset).</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h3 id="additional-attributes-example"><strong>Additional Attributes Example</strong></h3>
-<p>The <code>additional_attributes</code> parameter allows users to specify extra properties for the CSV file:</p>
+<h3 id="detailed-explanation-of-parameters"><strong>Detailed Explanation of Parameters</strong></h3>
 <ul>
-<li><strong>key</strong>: The name of the attribute.</li>
-<li><strong>value</strong>: The value associated with the attribute.</li>
+<li>
+<p><strong><code>type</code></strong>: Always set to <code>"StreamKafkaIceberg"</code>. This identifies the command type as a Kafka streaming ingestion command to an Iceberg table.</p>
+</li>
+<li>
+<p><strong><code>kafka_connection</code></strong>: The name of the Kafka connection to use for consuming messages from Kafka. This connection is defined in the <strong>Connection Properties</strong> section, which specifies the necessary credentials and configurations to connect to the Kafka broker.</p>
+</li>
+<li>
+<p><strong><code>topic</code></strong>: Specifies the Kafka topic to consume messages from. Kafka topics are logical channels that hold streams of data, and this parameter tells the system from which topic to read data.</p>
+</li>
+<li>
+<p><strong><code>iceberg_table</code></strong>: The name of the Iceberg table to write the streaming data. This is where the data consumed from Kafka will be written. Iceberg tables provide strong consistency, partitioning, and support for schema evolution.</p>
+</li>
+<li>
+<p><strong><code>checkpoint_location</code></strong>: The location to store Kafka offset information, ensuring that the consumer can resume from the last processed message in case of failure or restart. This is crucial for maintaining exactly-once processing semantics.</p>
+</li>
+<li>
+<p><strong><code>group_id</code></strong>: The consumer group ID to track the Kafka consumer’s state. Multiple consumers can share the same group ID to divide the workload, and each group ID will independently keep track of the Kafka offset.</p>
+</li>
+<li>
+<p><strong><code>format</code></strong>: The format for writing data to the Iceberg table. Common formats include <code>parquet</code>, <code>orc</code>, or <code>avro</code>. Parquet is often recommended due to its efficient columnar storage and compatibility with Iceberg.</p>
+</li>
+<li>
+<p><strong><code>poll_timeout_ms</code></strong>: This optional parameter defines the timeout in milliseconds for polling new data from Kafka. The default is typically 1000ms, but you can adjust it based on the frequency of data and system responsiveness.</p>
+</li>
+<li>
+<p><strong><code>max_offset</code></strong>: The maximum Kafka offset to consume messages up to. If not provided, it defaults to consuming from the latest offset, i.e., only new messages that arrive after the job starts.</p>
+</li>
 </ul>
-<h4 id="example-of-header-attribute"><strong>Example of Header Attribute</strong></h4>
-<pre><code class="language-json">&quot;additional_attributes&quot;: [
-  {
-    &quot;key&quot;: &quot;header&quot;,
-    &quot;value&quot;: &quot;True&quot;
-  }
-]
-</code></pre>
-<p>This indicates that the first row in the CSV file should be treated as column headers.</p>
 <hr />
-<h3 id="example-use-case"><strong>Example Use Case</strong></h3>
-<p><strong>Scenario:</strong> You need to read a CSV file named <code>people.csv</code> that has headers and uses commas as delimiters.</p>
-<h4 id="json-configuration"><strong>JSON Configuration:</strong></h4>
-<pre><code class="language-json">{
-  &quot;execution&quot;: [
+<h3 id="example-streamkafkaiceberg-command"><strong>Example StreamKafkaIceberg Command</strong></h3>
+<p>Below is an example configuration for streaming data from a Kafka topic into an Iceberg table:</p>
+<p>```json
+{
+  "execution": [
     {
-      &quot;type&quot;: &quot;CSVRead&quot;,
-      &quot;file_location&quot;: &quot;/home/iceberg/data/file/people.csv&quot;,
-      &quot;delimiter&quot;: &quot;,&quot;,
-      &quot;quotes&quot;: &quot;&quot;&quot;,
-      &quot;additional_attributes&quot;: [
-        {
-          &quot;key&quot;: &quot;header&quot;,
-          &quot;value&quot;: &quot;True&quot;
-        }
-      ]
+      "type": "StreamKafkaIceberg",
+      "kafka_connection": "kafka_connection",
+      "topic": "customer_events",
+      "iceberg_table": "crm.raw.customer_events",
+      "checkpoint_location": "/path/to/checkpoints",
+      "group_id": "customer_events_consumer_group",
+      "format": "parquet",
+      "poll_timeout_ms": 2000,
+      "max_offset": 1000000
     }
   ]
-}
-</code></pre>
-<hr />
-<h3 id="behavior"><strong>Behavior</strong></h3>
-<ul>
-<li><strong><code>file_location</code></strong>: Specifies the file to be read. Ensure the path is correct.</li>
-<li><strong><code>delimiter</code></strong>: By default, CSV files are comma-delimited, but this can be customized for other formats (e.g., semicolons).</li>
-<li><strong><code>quotes</code></strong>: Handles quoted values in CSV files (e.g., <code>"John, Doe"</code>).</li>
-<li><strong><code>header</code></strong>: If set to <code>True</code>, the first row is treated as column headers.</li>
-</ul>
-<hr />
-<h3 id="related-commands"><strong>Related Commands</strong></h3>
-<ul>
-<li><strong>CSVWrite</strong>: For writing data back into a CSV file.</li>
-<li><strong>TransformSQL</strong>: For transforming the data after reading it.</li>
-</ul>
-<hr />
+}</p>
 <h3 id="conclusion"><strong>Conclusion</strong></h3>
-<p>The <strong>CSVRead</strong> is a flexible and configurable way to read CSV files into your pipeline, allowing for custom delimiters, quotes, and handling of headers.</p>
+<p>The StreamKafkaIceberg command is an essential tool for real-time data ingestion in a data pipeline. It leverages Apache Kafka as a source for streaming data and Iceberg as the destination for structured and high-performance storage. This combination of streaming with Kafka and efficient data management with Iceberg enables the creation of scalable, reliable, and performant data pipelines.</p>
+<p>With the ability to dynamically consume data from Kafka topics and write to Iceberg tables, you get the benefit of real-time analytics, partitioned storage, schema evolution, and ACID compliance.</p>
+<p>By configuring checkpointing and offset management, this command supports fault tolerance and exactly-once processing semantics, ensuring your data pipeline is robust and capable of handling large volumes of real-time data.</p>
 
 
 

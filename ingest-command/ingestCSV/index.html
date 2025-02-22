@@ -9,6 +9,10 @@
       
       
       
+        <link rel="prev" href="../../getting-started/">
+      
+      
+        <link rel="next" href="../ingestKafka/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -16,7 +20,7 @@
     
     
       
-        <title>Csvwrite - Mu-Pipelines Docs</title>
+        <title>Read from CSV - Mu-Pipelines Docs</title>
       
     
     
@@ -57,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#ingestcsv-documentation" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -89,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Csvwrite
+              Read from CSV
             
           </span>
         </div>
@@ -245,17 +254,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -270,7 +281,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Execute Commands
@@ -281,32 +292,29 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../execute-command/execute-command/" class="md-nav__link">
-        
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
   
   <span class="md-ellipsis">
-    Sample Configuration
+    Read from CSV
     
   </span>
   
 
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../execute-command/CSVRead/" class="md-nav__link">
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -316,6 +324,132 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ingestcsv-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      IngestCSV Documentation 📄
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="IngestCSV Documentation 📄">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#json-configuration-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      JSON Configuration Example
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#additional-attributes-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Attributes Example
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Additional Attributes Example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-of-header-attribute" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example of Header Attribute
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-use-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Use Case
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example Use Case">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#json-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      JSON Configuration:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      Behavior
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#related-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Related Commands
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -328,7 +462,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../execute-command/kafka/" class="md-nav__link">
+      <a href="../ingestKafka/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -371,7 +505,7 @@
             
   
   <span class="md-ellipsis">
-    Destination Commands
+    Transform Commands
     
   </span>
   
@@ -382,7 +516,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Destination Commands
+            Transform Commands
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -393,55 +527,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../destination-command/" class="md-nav__link">
+      <a href="../../transform-command/transformSQL/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Sample Configuration
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../csvWrite.md" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Write to CSV
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../iceberg/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Store to Iceberg
+    SQL Transformation
     
   </span>
   
@@ -480,7 +570,7 @@
             
   
   <span class="md-ellipsis">
-    Streaming Commands
+    Destination Commands
     
   </span>
   
@@ -491,7 +581,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            Streaming Commands
+            Destination Commands
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -502,11 +592,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../streaming-command/streaming-command/" class="md-nav__link">
+      <a href="../../destination-command/destinationCSV/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Sample Configuration
+    Write to CSV
     
   </span>
   
@@ -524,7 +614,72 @@
   
   
     <li class="md-nav__item">
-      <a href="../../streaming-command/kafka-iceberg/" class="md-nav__link">
+      <a href="../../destination-command/destinationIceberg/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Store to Iceberg
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Streaming Commands
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Streaming Commands
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../streaming-command/stream-kafka-iceberg/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -585,6 +740,122 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ingestcsv-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      IngestCSV Documentation 📄
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="IngestCSV Documentation 📄">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#json-configuration-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      JSON Configuration Example
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#additional-attributes-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Attributes Example
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Additional Attributes Example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-of-header-attribute" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example of Header Attribute
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-use-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Use Case
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example Use Case">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#json-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      JSON Configuration:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      Behavior
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#related-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Related Commands
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -599,9 +870,126 @@
 
 
 
-  <h1>Csvwrite</h1>
+  <h1>Read from CSV</h1>
 
-
+<h2 id="ingestcsv-documentation"><strong>IngestCSV Documentation 📄</strong></h2>
+<p>The <code>IngestCSV</code> is used to read and load data from a <strong>CSV file</strong> into the pipeline. It provides configuration options like <strong>file location</strong>, <strong>delimiter</strong>, <strong>quote characters</strong>, and <strong>headers</strong> to accommodate different CSV formats.</p>
+<h3 id="json-configuration-example"><strong>JSON Configuration Example</strong></h3>
+<pre><code class="language-json">{
+  &quot;execution&quot;: [
+    {
+      &quot;type&quot;: &quot;IngestCSV&quot;,
+      &quot;file_location&quot;: &quot;/home/iceberg/data/file/people.csv&quot;,
+      &quot;delimiter&quot;: &quot;,&quot;,
+      &quot;quotes&quot;: &quot;&quot;&quot;,
+      &quot;additional_attributes&quot;: [
+        {
+          &quot;key&quot;: &quot;header&quot;,
+          &quot;value&quot;: &quot;True&quot;
+        }
+      ]
+    }
+  ]
+}
+</code></pre>
+<hr />
+<h3 id="parameters"><strong>Parameters</strong></h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>type</code></td>
+<td>String</td>
+<td>✅ Yes</td>
+<td>Specifies the type of the command (<code>CSVReadCommand</code>).</td>
+</tr>
+<tr>
+<td><code>file_location</code></td>
+<td>String</td>
+<td>✅ Yes</td>
+<td>The path to the CSV file to be read. Can be absolute or relative.</td>
+</tr>
+<tr>
+<td><code>delimiter</code></td>
+<td>String</td>
+<td>❌ No</td>
+<td>The character used to separate columns in the CSV (default is <code>,</code>).</td>
+</tr>
+<tr>
+<td><code>quotes</code></td>
+<td>String</td>
+<td>❌ No</td>
+<td>The character used for quoting text in CSV (default is <code>"</code>).</td>
+</tr>
+<tr>
+<td><code>additional_attributes</code></td>
+<td>Array</td>
+<td>❌ No</td>
+<td>Optional attributes to specify additional settings. Each attribute consists of a <code>key</code> and <code>value</code> pair. For example, you can specify if the CSV has headers.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="additional-attributes-example"><strong>Additional Attributes Example</strong></h3>
+<p>The <code>additional_attributes</code> parameter allows users to specify extra properties for the CSV file:</p>
+<ul>
+<li><strong>key</strong>: The name of the attribute.</li>
+<li><strong>value</strong>: The value associated with the attribute.</li>
+</ul>
+<h4 id="example-of-header-attribute"><strong>Example of Header Attribute</strong></h4>
+<pre><code class="language-json">&quot;additional_attributes&quot;: [
+  {
+    &quot;key&quot;: &quot;header&quot;,
+    &quot;value&quot;: &quot;True&quot;
+  }
+]
+</code></pre>
+<p>This indicates that the first row in the CSV file should be treated as column headers.</p>
+<hr />
+<h3 id="example-use-case"><strong>Example Use Case</strong></h3>
+<p><strong>Scenario:</strong> You need to read a CSV file named <code>people.csv</code> that has headers and uses commas as delimiters.</p>
+<h4 id="json-configuration"><strong>JSON Configuration:</strong></h4>
+<pre><code class="language-json">{
+  &quot;execution&quot;: [
+    {
+      &quot;type&quot;: &quot;CSVRead&quot;,
+      &quot;file_location&quot;: &quot;/home/iceberg/data/file/people.csv&quot;,
+      &quot;delimiter&quot;: &quot;,&quot;,
+      &quot;quotes&quot;: &quot;&quot;&quot;,
+      &quot;additional_attributes&quot;: [
+        {
+          &quot;key&quot;: &quot;header&quot;,
+          &quot;value&quot;: &quot;True&quot;
+        }
+      ]
+    }
+  ]
+}
+</code></pre>
+<hr />
+<h3 id="behavior"><strong>Behavior</strong></h3>
+<ul>
+<li><strong><code>file_location</code></strong>: Specifies the file to be read. Ensure the path is correct.</li>
+<li><strong><code>delimiter</code></strong>: By default, CSV files are comma-delimited, but this can be customized for other formats (e.g., semicolons).</li>
+<li><strong><code>quotes</code></strong>: Handles quoted values in CSV files (e.g., <code>"John, Doe"</code>).</li>
+<li><strong><code>header</code></strong>: If set to <code>True</code>, the first row is treated as column headers.</li>
+</ul>
+<hr />
+<h3 id="related-commands"><strong>Related Commands</strong></h3>
+<ul>
+<li><strong>destinationCSV</strong>: For writing data back into a CSV file.</li>
+<li><strong>TransformSQL</strong>: For transforming the data after reading it.</li>
+</ul>
+<hr />
+<h3 id="conclusion"><strong>Conclusion</strong></h3>
+<p>The <strong>CSVRead</strong> is a flexible and configurable way to read CSV files into your pipeline, allowing for custom delimiters, quotes, and handling of headers.</p>
 
 
 
