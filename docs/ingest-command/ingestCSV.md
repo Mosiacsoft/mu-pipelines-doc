@@ -1,7 +1,7 @@
 
-## **CSVRead Documentation 📄**
+## **IngestCSV Documentation 📄**
 
-The `CSVRead` is used to read and load data from a **CSV file** into the pipeline. It provides configuration options like **file location**, **delimiter**, **quote characters**, and **headers** to accommodate different CSV formats.
+The `IngestCSV` is used to read and load data from a **CSV file** into the pipeline. It provides configuration options like **file location**, **delimiter**, **quote characters**, and **headers** to accommodate different CSV formats.
 
 ### **JSON Configuration Example**
 
@@ -9,7 +9,7 @@ The `CSVRead` is used to read and load data from a **CSV file** into the pipelin
 {
   "execution": [
     {
-      "type": "CSVRead",
+      "type": "IngestCSV",
       "file_location": "/home/iceberg/data/file/people.csv",
       "delimiter": ",",
       "quotes": """,
@@ -98,7 +98,7 @@ This indicates that the first row in the CSV file should be treated as column he
 
 ### **Related Commands**
 
-- **CSVWrite**: For writing data back into a CSV file.
+- **destinationCSV**: For writing data back into a CSV file.
 - **TransformSQL**: For transforming the data after reading it.
 
 ---

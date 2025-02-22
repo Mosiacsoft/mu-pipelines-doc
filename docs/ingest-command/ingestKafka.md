@@ -9,7 +9,7 @@ To ingest data from a Kafka topic in **batch mode**, you would typically configu
 {
   "execution": [
     {
-      "type": "KafkaRead",
+      "type": "IngestKafka",
       "bootstrap_servers": "localhost:9092",
       "topic": "example-topic",
       "group_id": "batch-consumer-group",
@@ -134,10 +134,7 @@ The **KafkaReadCommand** can be used in **batch mode** to periodically read mess
 
 ### Related Commands
 
-- **KafkaWriteCommand**: Write data to a Kafka topic in batch mode.
-- **BatchProcessCommand**: For scheduling periodic or batch processing tasks.
-- **FileSinkCommand**: To write the consumed Kafka data to a file (e.g., CSV, Parquet).
-- **TransformCommand**: For transforming Kafka data before further processing or storing.
+
 
 ---
 

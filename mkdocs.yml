@@ -6,16 +6,15 @@ nav:
   - Home: index.md
   - Getting Started: getting-started.md
   - Execute Commands: 
-      Sample Configuration: execute-command\execute-command.md
-      Read from CSV: execute-command\CSVRead.md
-      Read from Kafka: execute-command\kafka.md
+      Read from CSV: ingest-command\ingestCSV.md
+      Read from Kafka: ingest-command\ingestKafka.md
+  - Transform Commands: 
+      SQL Transformation: transform-command\transformSQL.md
   - Destination Commands: 
-      Sample Configuration: destination-command\destination-command.md
-      Write to CSV: destination-command\csvWrite.md
-      Store to Iceberg: destination-command\iceberg.md
+      Write to CSV: destination-command\destinationCSV.md
+      Store to Iceberg: destination-command\destinationIceberg.md
   - Streaming Commands: 
-      Sample Configuration: streaming-command\streaming-command.md
-      Kafka to Iceberg Configuration: streaming-command\kafka-iceberg.md
+      Kafka to Iceberg Configuration: streaming-command\stream-kafka-iceberg.md
 
   - FAQ: faq.md
 
