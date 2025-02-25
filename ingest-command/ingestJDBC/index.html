@@ -9,6 +9,10 @@
       
       
       
+        <link rel="prev" href="../ingestKafka/">
+      
+      
+        <link rel="next" href="../../transform-command/transformSQL/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -16,7 +20,7 @@
     
     
       
-        <title>IngestJDBC Command Documentation - Coming Soon - mu-pipelines Docs</title>
+        <title>Databases (JDBC) - mu-pipelines Docs</title>
       
     
     
@@ -94,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              IngestJDBC Command Documentation - Coming Soon
+              Databases (JDBC)
             
           </span>
         </div>
@@ -250,24 +254,26 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    Execute Commands
+    Ingestion Commands
     
   </span>
   
@@ -275,10 +281,10 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            Execute Commands
+            Ingestion Commands
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -293,7 +299,7 @@
         
   
   <span class="md-ellipsis">
-    Read from CSV
+    CSV
     
   </span>
   
@@ -315,12 +321,120 @@
         
   
   <span class="md-ellipsis">
-    Read from Kafka
+    Kafka
     
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Databases (JDBC)
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Databases (JDBC)
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ingestjdbc-command-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      IngestJDBC Command Structure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detailed-explanation-of-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Detailed Explanation of Parameters
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-ingestjdbc-command-with-dynamic-incremental-load" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example IngestJDBC Command with Dynamic Incremental Load
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -445,7 +559,7 @@
         
   
   <span class="md-ellipsis">
-    Write to CSV
+    CSV
     
   </span>
   
@@ -467,7 +581,7 @@
         
   
   <span class="md-ellipsis">
-    Store to Iceberg
+    Iceberg
     
   </span>
   
@@ -546,6 +660,48 @@
           </ul>
         </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../connection_properties/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Connection Properties
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../global_properties/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Global Properties
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
