@@ -898,24 +898,24 @@
 <hr />
 <h3 id="example-ingestjdbc-command-with-dynamic-incremental-load"><strong>Example IngestJDBC Command with Dynamic Incremental Load</strong></h3>
 <p>Here’s an example of how the <strong>IngestJDBC</strong> command might be configured to perform incremental loading with dynamically fetched lower and upper bounds:</p>
-<p>```json
-{
-  "execution": [
+<pre><code class="language-json">{
+  &quot;execution&quot;: [
     {
-      "type": "IngestJDBC",
-      "name": "jdbc_connection_customers",
-      "connection_name": "jdbc_connection",
-      "query": "SELECT * FROM crm.customers WHERE updated_at BETWEEN '{{lower_bound_value}}' AND '{{upper_bound_value}}'",
-      "lower_bound_query": "SELECT last_run from stats.incremental where name='jdbc_connection_customers'",
-      "upper_bound_query": "SELECT MAX(updated_at) FROM crm.customers",
-      "incremental_value_storage": {
-        "type": "table",
-        "connection": "stats.incremental",
+      &quot;type&quot;: &quot;IngestJDBC&quot;,
+      &quot;name&quot;: &quot;jdbc_connection_customers&quot;,
+      &quot;connection_name&quot;: &quot;jdbc_connection&quot;,
+      &quot;query&quot;: &quot;SELECT * FROM crm.customers WHERE updated_at BETWEEN '{{lower_bound_value}}' AND '{{upper_bound_value}}'&quot;,
+      &quot;lower_bound_query&quot;: &quot;SELECT last_run from stats.incremental where name='jdbc_connection_customers'&quot;,
+      &quot;upper_bound_query&quot;: &quot;SELECT MAX(updated_at) FROM crm.customers&quot;,
+      &quot;incremental_value_storage&quot;: {
+        &quot;type&quot;: &quot;table&quot;,
+        &quot;connection&quot;: &quot;stats.incremental&quot;,
       }
-      "batch_size": 1000
+      &quot;batch_size&quot;: 1000
     }
   ]
-}</p>
+}
+</code></pre>
 <h3 id="conclusion"><strong>Conclusion</strong></h3>
 <p>The "IngestJDBC" command with dynamic lower and upper bound queries enables more flexible and efficient incremental data loading. By querying the database for the appropriate range of data (via lower_bound_query and upper_bound_query), this approach avoids redundant data loads and ensures that only relevant data is processed.</p>
 <p>This dynamic approach to handling incremental data ingestion is ideal for large databases or when frequent data loads are required, as it reduces the amount of data ingested and improves pipeline performance.</p>

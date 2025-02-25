@@ -687,21 +687,22 @@
 
 <h1 id="destinationcsv-command-documentation">DestinationCSV Command Documentation</h1>
 <p>The <strong>DestinationCSV</strong> command is used to specify the destination for writing data in CSV format. This can be useful when you need to store processed or ingested data into CSV files. Below is an example configuration for writing data to a CSV file.</p>
-<p>```json
-{
-  "destination": [
+<pre><code class="language-json">{
+  &quot;destination&quot;: [
     {
-      "type": "destinationCSV",
-      "file_location": "/home/data/output/processed_data.csv",
-      "delimiter": ",",
-      "header": true,
-      "quotes": "\"",
-      "additional_attributes": [
-        { "key": "mode", "value": "overwrite" }
+      &quot;type&quot;: &quot;destinationCSV&quot;,
+      &quot;file_location&quot;: &quot;/home/data/output/processed_data.csv&quot;,
+      &quot;delimiter&quot;: &quot;,&quot;,
+      &quot;header&quot;: true,
+      &quot;quotes&quot;: &quot;\&quot;&quot;,
+      &quot;additional_attributes&quot;: [
+        { &quot;key&quot;: &quot;mode&quot;, &quot;value&quot;: &quot;overwrite&quot; }
       ]
     }
   ]
-}</p>
+}
+
+</code></pre>
 <h1 id="destinationcsv-command-parameters">DestinationCSV Command - Parameters</h1>
 <h3 id="parameters"><strong>Parameters</strong></h3>
 <table>

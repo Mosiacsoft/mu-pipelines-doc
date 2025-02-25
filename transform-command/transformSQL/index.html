@@ -454,7 +454,7 @@
         <li class="md-nav__item">
   <a href="#transformsql-command-configuration-example" class="md-nav__link">
     <span class="md-ellipsis">
-      transformSQL Command Configuration Example
+      TransformSQL Command Configuration Example
     </span>
   </a>
   
@@ -738,7 +738,7 @@
         <li class="md-nav__item">
   <a href="#transformsql-command-configuration-example" class="md-nav__link">
     <span class="md-ellipsis">
-      transformSQL Command Configuration Example
+      TransformSQL Command Configuration Example
     </span>
   </a>
   
@@ -778,18 +778,19 @@
 
 
 
-<h1 id="transformsql-command-documentation-coming-soon">transformSQL Command Documentation - Coming Soon</h1>
-<h3 id="transformsql-command-configuration-example"><strong>transformSQL Command Configuration Example</strong></h3>
-<p>The <strong>transformSQL</strong> command allows you to apply SQL transformations to your data before it is written to the destination. It is useful for performing data processing, filtering, aggregations, and other SQL-based operations within your data pipeline.</p>
-<p>```json
-{
-  "execution": [
+<h1 id="transformsql-command-documentation-coming-soon">TransformSQL Command Documentation - Coming Soon</h1>
+<h3 id="transformsql-command-configuration-example"><strong>TransformSQL Command Configuration Example</strong></h3>
+<p>The <strong>TransformSQL</strong> command allows you to apply SQL transformations to your data before it is written to the destination. It is useful for performing data processing, filtering, aggregations, and other SQL-based operations within your data pipeline.</p>
+<pre><code class="language-json">{
+  &quot;execution&quot;: [
     {
-      "type": "TransformSQL",
-      "query": "SELECT * FROM raw_data WHERE age &gt; 18"
+      &quot;type&quot;: &quot;TransformSQL&quot;,
+      &quot;query&quot;: &quot;SELECT * FROM raw_data WHERE age &gt; 18&quot;
     }
   ]
-}</p>
+}
+
+</code></pre>
 <h3 id="detailed-explanation-of-parameters"><strong>Detailed Explanation of Parameters</strong></h3>
 <ul>
 <li>
