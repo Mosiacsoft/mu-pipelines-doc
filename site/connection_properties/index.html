@@ -16,7 +16,7 @@
     
     
       
-        <title>Connection properties - Mu-Pipelines Docs</title>
+        <title>Connection Properties Documentation - Mu-Pipelines Docs</title>
       
     
     
@@ -57,6 +57,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#connection-properties-documentation" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -89,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Connection properties
+              Connection Properties Documentation
             
           </span>
         </div>
@@ -284,29 +289,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../execute-command/execute-command/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Sample Configuration
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../execute-command/CSVRead/" class="md-nav__link">
+      <a href="../ingest-command/ingestCSV/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -328,7 +311,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../execute-command/kafka/" class="md-nav__link">
+      <a href="../ingest-command/ingestKafka/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -371,7 +354,7 @@
             
   
   <span class="md-ellipsis">
-    Destination Commands
+    Transform Commands
     
   </span>
   
@@ -382,7 +365,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Destination Commands
+            Transform Commands
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -393,55 +376,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../destination-command/destination-command/" class="md-nav__link">
+      <a href="../transform-command/transformSQL/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Sample Configuration
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../destination-command/csvWrite.md" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Write to CSV
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../destination-command/iceberg/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Store to Iceberg
+    SQL Transformation
     
   </span>
   
@@ -480,7 +419,7 @@
             
   
   <span class="md-ellipsis">
-    Streaming Commands
+    Destination Commands
     
   </span>
   
@@ -491,7 +430,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            Streaming Commands
+            Destination Commands
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -502,11 +441,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../streaming-command/streaming-command/" class="md-nav__link">
+      <a href="../destination-command/destinationCSV/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Sample Configuration
+    Write to CSV
     
   </span>
   
@@ -524,7 +463,72 @@
   
   
     <li class="md-nav__item">
-      <a href="../streaming-command/kafka-iceberg/" class="md-nav__link">
+      <a href="../destination-command/destinationIceberg/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Store to Iceberg
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Streaming Commands
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Streaming Commands
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../streaming-command/stream-kafka-iceberg/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -584,6 +588,61 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connection-properties-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connection Properties Structure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detailed-explanation-of-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Detailed Explanation of Parameters
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-connection-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Connection Configuration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -599,9 +658,132 @@
 
 
 
-  <h1>Connection properties</h1>
-
-<p>comming soon </p>
+<h1 id="connection-properties-documentation">Connection Properties Documentation</h1>
+<h3 id="overview"><strong>Overview</strong></h3>
+<p>Connection properties are used to define the connection settings between the data pipeline and various external systems (e.g., databases, file storage, message queues). These properties allow you to configure how your data pipeline interacts with the source and destination systems, ensuring that it can securely and efficiently read from and write to external resources.</p>
+<h3 id="connection-properties-structure"><strong>Connection Properties Structure</strong></h3>
+<p>Connection properties typically include the following key parameters:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>connection_name</code></td>
+<td>String</td>
+<td>✅ Yes</td>
+<td>The unique name used to identify the connection configuration.</td>
+</tr>
+<tr>
+<td><code>host</code></td>
+<td>String</td>
+<td>✅ Yes</td>
+<td>The host URL or IP address of the external system (e.g., database or server).</td>
+</tr>
+<tr>
+<td><code>port</code></td>
+<td>Integer</td>
+<td>✅ Yes</td>
+<td>The port number used for the connection.</td>
+</tr>
+<tr>
+<td><code>username</code></td>
+<td>String</td>
+<td>✅ Yes</td>
+<td>The username required to authenticate to the external system.</td>
+</tr>
+<tr>
+<td><code>password</code></td>
+<td>String</td>
+<td>✅ Yes</td>
+<td>The password associated with the username for authentication.</td>
+</tr>
+<tr>
+<td><code>database_name</code></td>
+<td>String</td>
+<td>✅ Yes</td>
+<td>The name of the database or schema to connect to.</td>
+</tr>
+<tr>
+<td><code>ssl_enabled</code></td>
+<td>Boolean</td>
+<td>❌ No</td>
+<td>Whether to use SSL encryption for the connection (default: <code>false</code>).</td>
+</tr>
+<tr>
+<td><code>connection_timeout</code></td>
+<td>Integer</td>
+<td>❌ No</td>
+<td>The timeout value for establishing a connection (in seconds).</td>
+</tr>
+<tr>
+<td><code>extra_options</code></td>
+<td>Object</td>
+<td>❌ No</td>
+<td>Additional options or parameters specific to the type of connection (e.g., SSL certificates).</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="detailed-explanation-of-parameters"><strong>Detailed Explanation of Parameters</strong></h3>
+<ul>
+<li>
+<p><strong><code>connection_name</code></strong>: This parameter is used to uniquely identify a connection configuration. It allows you to reference the connection easily when defining sources or destinations in the pipeline configuration.</p>
+</li>
+<li>
+<p><strong><code>host</code></strong>: Specifies the host or IP address of the external system to which the pipeline will connect. This could be a database server, cloud storage endpoint, or a message queue system.</p>
+</li>
+<li>
+<p><strong><code>port</code></strong>: The port number used by the external system for communication. For example, databases typically use ports like <code>5432</code> for PostgreSQL or <code>3306</code> for MySQL. If no specific port is needed, the default port will be used based on the service type.</p>
+</li>
+<li>
+<p><strong><code>username</code></strong>: The username for authentication to the external system. This credential is used to securely access the database, file system, or other resource. It is important to keep this value secure.</p>
+</li>
+<li>
+<p><strong><code>password</code></strong>: The password corresponding to the username for authentication. It is important to securely store and encrypt this value in configuration files to prevent unauthorized access.</p>
+</li>
+<li>
+<p><strong><code>database_name</code></strong>: The name of the database or schema you want to connect to. This parameter is especially important when working with SQL databases or systems that have multiple schemas or databases.</p>
+</li>
+<li>
+<p><strong><code>ssl_enabled</code></strong>: A boolean value that specifies whether to use SSL (Secure Sockets Layer) encryption for the connection. This is important for securing data transmission between the pipeline and the external system. If set to <code>true</code>, SSL encryption will be used.</p>
+</li>
+<li>
+<p><strong><code>connection_timeout</code></strong>: Defines the timeout period (in seconds) for establishing the connection. If the connection cannot be established within this time, the attempt will be aborted. This parameter helps manage connection failures gracefully.</p>
+</li>
+<li>
+<p><strong><code>extra_options</code></strong>: An optional object to provide additional configuration settings specific to the connection. For instance, you might need to provide SSL certificates, connection pooling settings, or other system-specific parameters.</p>
+</li>
+</ul>
+<hr />
+<h3 id="example-connection-configuration"><strong>Example Connection Configuration</strong></h3>
+<p>Here’s an example of how connection properties might look in a JSON configuration for connecting to a PostgreSQL database:</p>
+<p>```json
+{
+  "connection_properties": {
+    "connection_name": "postgres_connection",
+    "host": "db.example.com",
+    "port": 5432,
+    "username": "user123",
+    "password": "securepassword",
+    "database_name": "data_pipeline_db",
+    "ssl_enabled": true,
+    "connection_timeout": 30,
+    "extra_options": {
+      "ssl_cert_path": "/path/to/ssl/certificate",
+      "pool_size": 10
+    }
+  }
+}</p>
+<h3 id="conclusion"><strong>Conclusion</strong></h3>
+<p>The <strong>Connection Properties</strong> are essential for establishing secure and efficient connections between your data pipeline and external systems. By defining these properties, you can configure various connection settings such as authentication, encryption, timeouts, and more. This flexibility ensures your pipeline can seamlessly interact with different data sources and destinations, whether it's a database, file system, or message queue.</p>
+<p>Proper management of connection properties is key to ensuring smooth and reliable data flow across your pipeline. Security features like SSL encryption, as well as customizable timeouts and additional settings, allow for a secure and performant connection to external resources.</p>
+<p>Incorporating these connection properties within your pipeline configuration allows you to easily manage different environments, credentials, and connection settings, ultimately leading to a more robust and secure data integration process.</p>
 
 
 

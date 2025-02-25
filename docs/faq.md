@@ -3,7 +3,7 @@
 ### How do I install Mu-Pipelines?
 Run:
 ```sh
-pip install mu-pipelines
+pip install 'mu-pipelines-driver[spark]'
 
 ### Can i build my own connector 
 Yes, that functionality is available in pro license

@@ -1,4 +1,4 @@
-site_name: "Mu-Pipelines Docs"
+site_name: "Mu-pipelines Docs"
 theme:
   name: "material"
 site_url: "https://mosaicsoft-data.github.io/mu-pipelines-doc/dev"

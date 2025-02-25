@@ -1,4 +1,4 @@
-# StreamKafkaIceberg Command Documentation
+# StreamKafkaIceberg Command Documentation - Coming Soon
 
 ### **Overview**
 

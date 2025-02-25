@@ -6,15 +6,24 @@ This guide will help you set up and run Mu-Pipelines.
 Ensure you have Python 3 installed, then run:
 
 ```sh
-pip install mu-pipelines
+pip install 'mu-pipelines-driver[spark]'
 ```
 
 ## 2️⃣ Create Config Files
-Our config files are divided into two sections: `execute` and `destination`.
+Our config files are divided into three sections: `ingest`, `transform` and `destination`.
 
 ### Configuration Parameters:
-- **execute-xx**: This can be ingesting data from a source or transforming using SQL/Python.
-- **destination**: The destination where data should be stored.
+- **Ingestxx**: This is the source from where data needs to be ingested
+- **Transformxx**: This is where you want to transform data
+- **Destinationxx**: The destination where data should be stored.
+
+Coming Soon 
+
+- **Executexx**: Run any python execute commands. e.g. ExecuteZIP, ExecuteFileCopy, ExecuteFileEncrypt etc 
+- **Validation**: Ability to run data quality checks based on parameters defined
+- **Alerts**: Configure where you want to send alerts to 
+- **Schedule**: Add a schedule for your job 
+- **Dependency**: List of config's that the job is dependant on 
 
 Refer to the config documentation for a list of available `execute` and `destination` commands.
 
@@ -56,13 +65,34 @@ df = run_config(
 
 Run your configuration using Spark Submit.
 
+You can run a config in production spark by using spark submit 
+
+Create a sample python script o import module 
+
+``` Sample app_args.py file 
+from mu_pipelines_driver.__main__ import main
+
+main()
+
+```
+
+``` spark submit command
+spark-submit /home/scripts/app_args.py --global-properties /home/scripts/global-properties.json --connection-properties /home/scripts/connection-properties.json /home/scripts/raw/people/people.json
+
+```
+
 ## 5️⃣ Run Config Using Airflow
 
-Execute the config using Airflow for workflow orchestration.
+Execute the config using Airflow for workflow orchestration. Use spark connector in airflow to create issue a spark submit command 
 
 ## 6️⃣ Chain Different Configurations to Meet Business Needs
 
-Mu-Pipelines allows you to chain multiple configurations together to address complex business requirements.
+Mu-pipelines allows you to chain multiple configurations together to address complex business requirements.
 
 ---
 🎯 **Want to add a custom connector?** Stay tuned for developer guides!
+
+Need to connect with our team or have requests for specific connectors please email us at mupipelines@gmail.com
+
+For more details please visit our website: https://mosaicsoft.wixsite.com/mu-pipelines
+

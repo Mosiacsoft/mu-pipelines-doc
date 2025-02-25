@@ -1,5 +1,5 @@
 
-# Kafka Batch Ingestion Configuration
+# Kafka Batch Ingestion Configuration - Coming Soon 
 
 ### Kafka Batch Ingestion Configuration Example
 
@@ -33,7 +33,7 @@ To ingest data from a Kafka topic in **batch mode**, you would typically configu
 
 ### Kafka Batch Ingestion Command Documentation 📥
 
-The **KafkaReadCommand** can be used in **batch mode** to periodically read messages from a Kafka topic at specified intervals. The configuration includes parameters to handle batch timing, max poll records, and other Kafka consumer settings.
+The **IngestKafka** can be used in **batch mode** to periodically read messages from a Kafka topic at specified intervals. The configuration includes parameters to handle batch timing, max poll records, and other Kafka consumer settings.
 
 #### JSON Configuration Example
 
@@ -41,7 +41,7 @@ The **KafkaReadCommand** can be used in **batch mode** to periodically read mess
 {
   "execution": [
     {
-      "type": "KafkaRead",
+      "type": "IngestKafka",
       "bootstrap_servers": "localhost:9092",
       "topic": "example-topic",
       "group_id": "batch-consumer-group",
@@ -67,7 +67,7 @@ The **KafkaReadCommand** can be used in **batch mode** to periodically read mess
 
 | Parameter              | Type    | Required | Description |
 |------------------------|---------|----------|-------------|
-| `type`                 | String  | ✅ Yes    | The type of command (`KafkaReadCommand`). |
+| `type`                 | String  | ✅ Yes    | The type of command (`IngestKafka`). |
 | `bootstrap_servers`    | String  | ✅ Yes    | The Kafka cluster address (e.g., `localhost:9092`). |
 | `topic`                | String  | ✅ Yes    | The Kafka topic from which data will be consumed. |
 | `group_id`             | String  | ✅ Yes    | The consumer group ID for Kafka. |
@@ -140,4 +140,4 @@ The **KafkaReadCommand** can be used in **batch mode** to periodically read mess
 
 ### Conclusion
 
-The **KafkaReadCommand** in **batch mode** is a powerful way to periodically ingest data from Kafka topics. By configuring parameters like **`batch_interval`**, **`max_poll_records`**, and **`auto_offset_reset`**, you can control how and when Kafka data is ingested, making it well-suited for periodic or batch-based processing in your data pipeline.
+The **IngestKafka** in **batch mode** is a powerful way to periodically ingest data from Kafka topics. By configuring parameters like **`batch_interval`**, **`max_poll_records`**, and **`auto_offset_reset`**, you can control how and when Kafka data is ingested, making it well-suited for periodic or batch-based processing in your data pipeline.

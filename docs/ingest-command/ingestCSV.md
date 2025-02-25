@@ -30,7 +30,7 @@ The `IngestCSV` is used to read and load data from a **CSV file** into the pipel
 
 | Parameter              | Type    | Required   | Description |
 |------------------------|---------|----------- |-------------|
-| `type`                 | String  | ✅ Yes    | Specifies the type of the command (`CSVReadCommand`). |
+| `type`                 | String  | ✅ Yes    | Specifies the type of the command (`IngestCSV`). |
 | `file_location`        | String  | ✅ Yes    | The path to the CSV file to be read. Can be absolute or relative. |
 | `delimiter`            | String  | ❌ No     | The character used to separate columns in the CSV (default is `,`). |
 | `quotes`               | String  | ❌ No     | The character used for quoting text in CSV (default is `"`). |
@@ -70,7 +70,7 @@ This indicates that the first row in the CSV file should be treated as column he
 {
   "execution": [
     {
-      "type": "CSVRead",
+      "type": "IngestCSV",
       "file_location": "/home/iceberg/data/file/people.csv",
       "delimiter": ",",
       "quotes": """,
@@ -98,11 +98,11 @@ This indicates that the first row in the CSV file should be treated as column he
 
 ### **Related Commands**
 
-- **destinationCSV**: For writing data back into a CSV file.
+- **DestinationCSV**: For writing data back into a CSV file.
 - **TransformSQL**: For transforming the data after reading it.
 
 ---
 
 ### **Conclusion**
 
-The **CSVRead** is a flexible and configurable way to read CSV files into your pipeline, allowing for custom delimiters, quotes, and handling of headers.
+The **IngestCSV** is a flexible and configurable way to read CSV files into your pipeline, allowing for custom delimiters, quotes, and handling of headers.

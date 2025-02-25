@@ -9,7 +9,7 @@ The **Iceberg** destination configuration allows you to define where the data wi
 {
   "destination": [
     {
-      "type": "table",
+      "type": "DestinationIceberg",
       "table_name": "crm.raw.people",
       "mode": "overwrite"
     }
@@ -23,7 +23,7 @@ The **Iceberg** destination configuration allows you to define where the data wi
 
 | Parameter         | Type    | Required | Description |
 |-------------------|---------|----------|-------------|
-| `type`            | String  | ✅ Yes    | The destination type (`table` for Iceberg tables). |
+| `type`            | String  | ✅ Yes    | The destination type (`DestinationIceberg` for Iceberg tables). |
 | `table_name`      | String  | ✅ Yes    | The name of the Iceberg table where data will be written. |
 | `mode`            | String  | ✅ Yes    | Defines how the data is written to the table. Possible values: `overwrite`, `append`, etc. |
 
@@ -70,7 +70,7 @@ To ensure that **Apache Spark** can interact with **Iceberg** as the default cat
    {
      "destination": [
        {
-         "type": "table",
+         "type": "DestinationIceberg",
          "table_name": "crm.raw.people",
          "mode": "overwrite"
        }
@@ -92,7 +92,7 @@ To ensure that **Apache Spark** can interact with **Iceberg** as the default cat
 {
   "destination": [
     {
-      "type": "table",
+      "type": "DestinationIceberg",
       "table_name": "crm.raw.people",
       "mode": "overwrite"
     }

@@ -6,11 +6,11 @@ The **DestinationCSV** command is used to specify the destination for writing da
 {
   "destination": [
     {
-      "type": "CSV",
+      "type": "destinationCSV",
       "file_location": "/home/data/output/processed_data.csv",
       "delimiter": ",",
       "header": true,
-      "quote_char": "\"",
+      "quotes": "\"",
       "additional_attributes": [
         { "key": "mode", "value": "overwrite" }
       ]
@@ -24,18 +24,18 @@ The **DestinationCSV** command is used to specify the destination for writing da
 
 | Parameter             | Type    | Required | Description                                                                 |
 |-----------------------|---------|----------|-----------------------------------------------------------------------------|
-| `type`                | String  | ✅ Yes    | The type of command (`CSV`).                                                  |
+| `type`                | String  | ✅ Yes    | The type of command (`destinationCSV`).                                                  |
 | `file_location`       | String  | ✅ Yes    | The location of the output CSV file. This can be a relative or absolute path. |
 | `delimiter`           | String  | ✅ Yes    | The delimiter used to separate values in the CSV file (e.g., `,`, `;`, `\t`). |
 | `header`              | Boolean | ✅ Yes    | Whether to include a header row in the CSV file (`true` or `false`).          |
-| `quote_char`          | String  | ✅ Yes    | The character used to quote strings in the CSV file (e.g., `"`).              |
+| `quotes`          | String  | ✅ Yes    | The character used to quote strings in the CSV file (e.g., `"`).              |
 | `additional_attributes`| Array   | ❌ No     | Additional attributes for customization (e.g., mode, append, etc.).           |
 
 ---
 
 ### **Detailed Explanation of Parameters**
 
-- **`type`**: Always set to `"CSV"`. This indicates that the destination is a CSV file.
+- **`type`**: Always set to `"destinationCSV"`. This indicates that the destination is a CSV file.
   
 - **`file_location`**: The file path where the CSV data will be written. This can be either an absolute or a relative file path. For example, `/home/data/output/processed_data.csv`. The file will be created at the given location if it does not already exist.
 
@@ -43,7 +43,7 @@ The **DestinationCSV** command is used to specify the destination for writing da
 
 - **`header`**: If set to `true`, the CSV file will include a header row containing the column names. If set to `false`, no header row will be included.
 
-- **`quote_char`**: Defines the character used to quote string values in the CSV file. This is typically used to enclose values that contain special characters or delimiters. The default is double-quote (`"`), but you can specify other characters like single-quote (`'`).
+- **`quotes`**: Defines the character used to quote string values in the CSV file. This is typically used to enclose values that contain special characters or delimiters. The default is double-quote (`"`), but you can specify other characters like single-quote (`'`).
 
 - **`additional_attributes`**: This is an optional parameter. It allows for extra configuration. For example, you might use this to specify the `mode` of writing to the file. Common modes are:
   - `overwrite`: Replaces the existing file if it exists.
@@ -55,8 +55,4 @@ The **DestinationCSV** command provides an easy way to write processed data into
 
 ### **Related Commands**
 
-- **SourceCSV**: Reads data from a CSV file and uses it as input for your data pipeline. This command is helpful when you're looking to ingest data from CSV files for further processing.
-
-- **FileSinkCommand**: For writing data to files in various formats like Parquet, JSON, etc. Use this command when working with other file formats, and it supports a variety of output destinations.
-
-- **TransformCommand**: Used to apply transformations to data before writing it to a destination like CSV. This command allows you to modify data structures, clean data, or perform computations before it reaches its destination.
+- **IngestCSV**: Reads data from a CSV file and uses it as input for your data pipeline. This command is helpful when you're looking to ingest data from CSV files for further processing.
