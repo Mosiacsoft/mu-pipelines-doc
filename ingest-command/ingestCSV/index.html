@@ -349,15 +349,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#json-configuration-example" class="md-nav__link">
-    <span class="md-ellipsis">
-      JSON Configuration Example
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#parameters" class="md-nav__link">
     <span class="md-ellipsis">
       Parameters
@@ -821,15 +812,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#json-configuration-example" class="md-nav__link">
-    <span class="md-ellipsis">
-      JSON Configuration Example
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#parameters" class="md-nav__link">
     <span class="md-ellipsis">
       Parameters
@@ -938,25 +920,6 @@
 
 <h2 id="ingestcsv-documentation"><strong>IngestCSV Documentation 📄</strong></h2>
 <p>The <code>IngestCSV</code> is used to read and load data from a <strong>CSV file</strong> into the pipeline. It provides configuration options like <strong>file location</strong>, <strong>delimiter</strong>, <strong>quote characters</strong>, and <strong>headers</strong> to accommodate different CSV formats.</p>
-<h3 id="json-configuration-example"><strong>JSON Configuration Example</strong></h3>
-<pre><code class="language-json">{
-  &quot;execution&quot;: [
-    {
-      &quot;type&quot;: &quot;IngestCSV&quot;,
-      &quot;file_location&quot;: &quot;/home/iceberg/data/file/people.csv&quot;,
-      &quot;delimiter&quot;: &quot;,&quot;,
-      &quot;quotes&quot;: &quot;&quot;&quot;,
-      &quot;additional_attributes&quot;: [
-        {
-          &quot;key&quot;: &quot;header&quot;,
-          &quot;value&quot;: &quot;True&quot;
-        }
-      ]
-    }
-  ]
-}
-</code></pre>
-<hr />
 <h3 id="parameters"><strong>Parameters</strong></h3>
 <table>
 <thead>

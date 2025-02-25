@@ -545,15 +545,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#json-configuration-example" class="md-nav__link">
-    <span class="md-ellipsis">
-      JSON Configuration Example
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#parameters" class="md-nav__link">
     <span class="md-ellipsis">
       Parameters
@@ -815,15 +806,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#json-configuration-example" class="md-nav__link">
-    <span class="md-ellipsis">
-      JSON Configuration Example
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#parameters" class="md-nav__link">
     <span class="md-ellipsis">
       Parameters
@@ -926,18 +908,6 @@
 
 <h2 id="default-catalog-as-destination-documentation"><strong>Default Catalog as Destination Documentation 📊</strong></h2>
 <p>The <strong>DestinationDefaultCatalog</strong> destination configuration allows you to define where the data will be written in the pipeline. The destination can specify an <strong>table</strong> where data will be loaded, and it supports different <strong>modes</strong> for managing data. It can be any <strong>hive metastore, spark managed catalog table, iceberg, delta</strong>. It uses default spark catalog to push data to. </p>
-<h3 id="json-configuration-example"><strong>JSON Configuration Example</strong></h3>
-<pre><code class="language-json">{
-  &quot;destination&quot;: [
-    {
-      &quot;type&quot;: &quot;DestinationDefaultCatalog&quot;,
-      &quot;table_name&quot;: &quot;crm.raw.people&quot;,
-      &quot;mode&quot;: &quot;overwrite&quot;
-    }
-  ]
-}
-</code></pre>
-<hr />
 <h3 id="parameters"><strong>Parameters</strong></h3>
 <table>
 <thead>

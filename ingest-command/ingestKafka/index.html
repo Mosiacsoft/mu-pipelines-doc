@@ -365,15 +365,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#kafka-batch-ingestion-configuration-example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Kafka Batch Ingestion Configuration Example
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#kafka-batch-ingestion-command-documentation" class="md-nav__link">
     <span class="md-ellipsis">
       Kafka Batch Ingestion Command Documentation 📥
@@ -811,15 +802,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#kafka-batch-ingestion-configuration-example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Kafka Batch Ingestion Configuration Example
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#kafka-batch-ingestion-command-documentation" class="md-nav__link">
     <span class="md-ellipsis">
       Kafka Batch Ingestion Command Documentation 📥
@@ -929,31 +911,6 @@
 
 
 <h1 id="kafka-batch-ingestion-configuration-coming-soon">Kafka Batch Ingestion Configuration - Coming Soon</h1>
-<h3 id="kafka-batch-ingestion-configuration-example">Kafka Batch Ingestion Configuration Example</h3>
-<p>To ingest data from a Kafka topic in <strong>batch mode</strong>, you would typically configure your pipeline to read data from Kafka at fixed intervals, similar to how batch jobs are run. Below is an example configuration for ingesting data in batch mode from Kafka.</p>
-<pre><code class="language-json">{
-  &quot;execution&quot;: [
-    {
-      &quot;type&quot;: &quot;IngestKafka&quot;,
-      &quot;bootstrap_servers&quot;: &quot;localhost:9092&quot;,
-      &quot;topic&quot;: &quot;example-topic&quot;,
-      &quot;group_id&quot;: &quot;batch-consumer-group&quot;,
-      &quot;key_deserializer&quot;: &quot;org.apache.kafka.common.serialization.StringDeserializer&quot;,
-      &quot;value_deserializer&quot;: &quot;org.apache.kafka.common.serialization.StringDeserializer&quot;,
-      &quot;auto_offset_reset&quot;: &quot;earliest&quot;,
-      &quot;batch_interval&quot;: 60000,  // 60 seconds, adjust as needed
-      &quot;max_poll_records&quot;: 1000,
-      &quot;additional_attributes&quot;: [
-        {
-          &quot;key&quot;: &quot;enable.auto.commit&quot;,
-          &quot;value&quot;: &quot;false&quot;
-        }
-      ]
-    }
-  ]
-}
-</code></pre>
-<hr />
 <h3 id="kafka-batch-ingestion-command-documentation">Kafka Batch Ingestion Command Documentation 📥</h3>
 <p>The <strong>IngestKafka</strong> can be used in <strong>batch mode</strong> to periodically read messages from a Kafka topic at specified intervals. The configuration includes parameters to handle batch timing, max poll records, and other Kafka consumer settings.</p>
 <h4 id="json-configuration-example">JSON Configuration Example</h4>
