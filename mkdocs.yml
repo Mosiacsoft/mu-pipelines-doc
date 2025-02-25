@@ -5,17 +5,19 @@ theme:
 nav:
   - Home: index.md
   - Getting Started: getting-started.md
-  - Execute Commands: 
-      Read from CSV: ingest-command\ingestCSV.md
-      Read from Kafka: ingest-command\ingestKafka.md
+  - Ingestion Commands: 
+      CSV: ingest-command\ingestCSV.md
+      Kafka: ingest-command\ingestKafka.md
+      Databases (JDBC): ingest-command\ingestJDBC.md
   - Transform Commands: 
       SQL Transformation: transform-command\transformSQL.md
   - Destination Commands: 
-      Write to CSV: destination-command\destinationCSV.md
-      Store to Iceberg: destination-command\destinationIceberg.md
+      CSV: destination-command\destinationCSV.md
+      Iceberg: destination-command\destinationIceberg.md
   - Streaming Commands: 
       Kafka to Iceberg Configuration: streaming-command\stream-kafka-iceberg.md
-
+  - Connection Properties: connection_properties.md
+  - Global Properties: global_properties.md
   - FAQ: faq.md
 
 repo_url: "https://mosaicsoft-data.github.io/mu-pipelines-doc/"
