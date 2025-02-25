@@ -1,6 +1,6 @@
-# Mu-Pipelines Documentation 🚀
+# mu-pipelines Documentation 🚀
 
-Welcome to the **Mu-Pipelines** documentation!  
+Welcome to the **mu-pipelines** documentation!  
 Mu-Pipelines is a **configuration-driven data pipeline platform** that enables easy **data ingestion, transformation, and orchestration** without complex coding.
 
 ## 🌟 Features
@@ -9,7 +9,7 @@ Mu-Pipelines is a **configuration-driven data pipeline platform** that enables e
 - **Seamless Data Integration**: Supports Iceberg, Delta Lake, and more.
 - **Lightweight & Scalable**: Configuration-based, no heavy setup required.
 
-🚀 Why Mu-Pipelines? 
+🚀 Why mu-pipelines? 
 For CTOs & Data Leaders:
 ✅ **Accelerates Data Delivery** – Move data 10x faster by eliminating manual ops.
 ✅ **Reduces Engineering Load** – Cut pipeline maintenance time by 40-60%, freeing engineers for higher-value work.
@@ -21,3 +21,7 @@ For Data Engineers:
 
 
 📖 **Start by reading the [Getting Started](getting-started.md) guide!**
+
+Need to connect with our team or have requests for specific connectors please email us at mupipelines@gmail.com
+
+For more details please visit our website: https://mosaicsoft.wixsite.com/mu-pipelines
