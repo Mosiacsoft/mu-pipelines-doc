@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#iceberg-as-destination-documentation" class="md-skip">
+        <a href="#default-catalog-as-destination-documentation" class="md-skip">
           Skip to content
         </a>
       
@@ -535,13 +535,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#iceberg-as-destination-documentation" class="md-nav__link">
+  <a href="#default-catalog-as-destination-documentation" class="md-nav__link">
     <span class="md-ellipsis">
-      Iceberg as Destination Documentation 📊
+      Default Catalog as Destination Documentation 📊
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Iceberg as Destination Documentation 📊">
+    <nav class="md-nav" aria-label="Default Catalog as Destination Documentation 📊">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -805,13 +805,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#iceberg-as-destination-documentation" class="md-nav__link">
+  <a href="#default-catalog-as-destination-documentation" class="md-nav__link">
     <span class="md-ellipsis">
-      Iceberg as Destination Documentation 📊
+      Default Catalog as Destination Documentation 📊
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Iceberg as Destination Documentation 📊">
+    <nav class="md-nav" aria-label="Default Catalog as Destination Documentation 📊">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -924,13 +924,13 @@
 
   <h1>Iceberg</h1>
 
-<h2 id="iceberg-as-destination-documentation"><strong>Iceberg as Destination Documentation 📊</strong></h2>
-<p>The <strong>Iceberg</strong> destination configuration allows you to define where the data will be written in the pipeline. The destination can specify an <strong>Iceberg table</strong> where data will be loaded, and it supports different <strong>modes</strong> for managing data.</p>
+<h2 id="default-catalog-as-destination-documentation"><strong>Default Catalog as Destination Documentation 📊</strong></h2>
+<p>The <strong>DestinationDefaultCatalog</strong> destination configuration allows you to define where the data will be written in the pipeline. The destination can specify an <strong>table</strong> where data will be loaded, and it supports different <strong>modes</strong> for managing data. It can be any <strong>hive metastore, spark managed catalog table, iceberg, delta</strong>. It uses default spark catalog to push data to. </p>
 <h3 id="json-configuration-example"><strong>JSON Configuration Example</strong></h3>
 <pre><code class="language-json">{
   &quot;destination&quot;: [
     {
-      &quot;type&quot;: &quot;DestinationIceberg&quot;,
+      &quot;type&quot;: &quot;DestinationDefaultCatalog&quot;,
       &quot;table_name&quot;: &quot;crm.raw.people&quot;,
       &quot;mode&quot;: &quot;overwrite&quot;
     }
@@ -953,7 +953,7 @@
 <td><code>type</code></td>
 <td>String</td>
 <td>✅ Yes</td>
-<td>The destination type (<code>DestinationIceberg</code> for Iceberg tables).</td>
+<td>The destination type (<code>DestinationDefaultCatalog</code> for Iceberg tables).</td>
 </tr>
 <tr>
 <td><code>table_name</code></td>
@@ -977,6 +977,7 @@
 </ul>
 <hr />
 <h3 id="configuring-spark-with-iceberg-as-the-default-catalog"><strong>Configuring Spark with Iceberg as the Default Catalog</strong></h3>
+<p>Please note similar steps can be applied for Hive, delta etc </p>
 <p>To ensure that <strong>Apache Spark</strong> can interact with <strong>Iceberg</strong> as the default catalog when using it as a destination, you must configure Spark with the appropriate catalog settings. By default, Spark uses <strong>Hive</strong> as its catalog. To set Iceberg as the default, follow these steps:</p>
 <ol>
 <li><strong>Add Iceberg as a dependency</strong>:
@@ -1006,7 +1007,7 @@
    {
      "destination": [
        {
-         "type": "DestinationIceberg",
+         "type": "DestinationDefaultCatalog",
          "table_name": "crm.raw.people",
          "mode": "overwrite"
        }
@@ -1020,7 +1021,7 @@
 <pre><code class="language-json">{
   &quot;destination&quot;: [
     {
-      &quot;type&quot;: &quot;DestinationIceberg&quot;,
+      &quot;type&quot;: &quot;DestinationDefaultCatalog&quot;,
       &quot;table_name&quot;: &quot;crm.raw.people&quot;,
       &quot;mode&quot;: &quot;overwrite&quot;
     }
@@ -1040,7 +1041,7 @@
 </ul>
 <hr />
 <h3 id="conclusion"><strong>Conclusion</strong></h3>
-<p>The <strong>Iceberg as Destination</strong> command provides a simple and effective way to write data into <strong>Iceberg tables</strong> with flexible write modes like <code>overwrite</code> and <code>append</code>. Configuring Spark with Iceberg as the default catalog makes it easier to work with Iceberg tables without needing to manually specify the catalog for each interaction. Once configured, use this command to manage your data pipeline outputs in a distributed, scalable table format.</p>
+<p>The <strong>DestinationDefaultCatalog</strong> command provides a simple and effective way to write data into <strong>Default catalog tables</strong> with flexible write modes like <code>overwrite</code> and <code>append</code>. Configuring Spark with Iceberg as the default catalog makes it easier to work with Iceberg tables without needing to manually specify the catalog for each interaction. Once configured, use this command to manage your data pipeline outputs in a distributed, scalable table format.</p>
 
 
 
