@@ -1,7 +1,7 @@
 
-## **Iceberg as Destination Documentation 📊**
+## **Default Catalog as Destination Documentation 📊**
 
-The **Iceberg** destination configuration allows you to define where the data will be written in the pipeline. The destination can specify an **Iceberg table** where data will be loaded, and it supports different **modes** for managing data.
+The **DestinationDefaultCatalog** destination configuration allows you to define where the data will be written in the pipeline. The destination can specify an **table** where data will be loaded, and it supports different **modes** for managing data. It can be any **hive metastore, spark managed catalog table, iceberg, delta**. It uses default spark catalog to push data to. 
 
 ### **JSON Configuration Example**
 
@@ -9,7 +9,7 @@ The **Iceberg** destination configuration allows you to define where the data wi
 {
   "destination": [
     {
-      "type": "DestinationIceberg",
+      "type": "DestinationDefaultCatalog",
       "table_name": "crm.raw.people",
       "mode": "overwrite"
     }
@@ -23,7 +23,7 @@ The **Iceberg** destination configuration allows you to define where the data wi
 
 | Parameter         | Type    | Required | Description |
 |-------------------|---------|----------|-------------|
-| `type`            | String  | ✅ Yes    | The destination type (`DestinationIceberg` for Iceberg tables). |
+| `type`            | String  | ✅ Yes    | The destination type (`DestinationDefaultCatalog` for Iceberg tables). |
 | `table_name`      | String  | ✅ Yes    | The name of the Iceberg table where data will be written. |
 | `mode`            | String  | ✅ Yes    | Defines how the data is written to the table. Possible values: `overwrite`, `append`, etc. |
 
@@ -37,6 +37,8 @@ The **Iceberg** destination configuration allows you to define where the data wi
 ---
 
 ### **Configuring Spark with Iceberg as the Default Catalog**
+
+Please note similar steps can be applied for Hive, delta etc 
 
 To ensure that **Apache Spark** can interact with **Iceberg** as the default catalog when using it as a destination, you must configure Spark with the appropriate catalog settings. By default, Spark uses **Hive** as its catalog. To set Iceberg as the default, follow these steps:
 
@@ -70,7 +72,7 @@ To ensure that **Apache Spark** can interact with **Iceberg** as the default cat
    {
      "destination": [
        {
-         "type": "DestinationIceberg",
+         "type": "DestinationDefaultCatalog",
          "table_name": "crm.raw.people",
          "mode": "overwrite"
        }
@@ -92,7 +94,7 @@ To ensure that **Apache Spark** can interact with **Iceberg** as the default cat
 {
   "destination": [
     {
-      "type": "DestinationIceberg",
+      "type": "DestinationDefaultCatalog",
       "table_name": "crm.raw.people",
       "mode": "overwrite"
     }
@@ -117,4 +119,4 @@ To ensure that **Apache Spark** can interact with **Iceberg** as the default cat
 
 ### **Conclusion**
 
-The **Iceberg as Destination** command provides a simple and effective way to write data into **Iceberg tables** with flexible write modes like `overwrite` and `append`. Configuring Spark with Iceberg as the default catalog makes it easier to work with Iceberg tables without needing to manually specify the catalog for each interaction. Once configured, use this command to manage your data pipeline outputs in a distributed, scalable table format.
+The **DestinationDefaultCatalog** command provides a simple and effective way to write data into **Default catalog tables** with flexible write modes like `overwrite` and `append`. Configuring Spark with Iceberg as the default catalog makes it easier to work with Iceberg tables without needing to manually specify the catalog for each interaction. Once configured, use this command to manage your data pipeline outputs in a distributed, scalable table format.

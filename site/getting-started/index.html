@@ -286,7 +286,7 @@
         <li class="md-nav__item">
   <a href="#1-install-mu-pipelines" class="md-nav__link">
     <span class="md-ellipsis">
-      1️⃣ Install Mu-Pipelines
+      1️⃣ Install mu-pipelines
     </span>
   </a>
   
@@ -778,7 +778,7 @@
         <li class="md-nav__item">
   <a href="#1-install-mu-pipelines" class="md-nav__link">
     <span class="md-ellipsis">
-      1️⃣ Install Mu-Pipelines
+      1️⃣ Install mu-pipelines
     </span>
   </a>
   
@@ -860,9 +860,9 @@
 
 
 
-<h1 id="welcome-to-mu-pipelines">Welcome to Mu-Pipelines!</h1>
+<h1 id="welcome-to-mu-pipelines">Welcome to mu-pipelines!</h1>
 <p>This guide will help you set up and run Mu-Pipelines.</p>
-<h2 id="1-install-mu-pipelines">1️⃣ Install Mu-Pipelines</h2>
+<h2 id="1-install-mu-pipelines">1️⃣ Install mu-pipelines</h2>
 <p>Ensure you have Python 3 installed, then run:</p>
 <pre><code class="language-sh">pip install 'mu-pipelines-driver[spark]'
 </code></pre>
@@ -918,12 +918,13 @@ df = run_config(
 <p>Run your configuration using Spark Submit.</p>
 <p>You can run a config in production spark by using spark submit </p>
 <p>Create a sample python script o import module </p>
-<p>``` Sample app_args.py file 
-from mu_pipelines_driver.<strong>main</strong> import main</p>
-<p>main()</p>
-<pre><code>
-``` spark submit command
-spark-submit /home/scripts/app_args.py --global-properties /home/scripts/global-properties.json --connection-properties /home/scripts/connection-properties.json /home/scripts/raw/people/people.json
+<pre><code class="language-python">from mu_pipelines_driver.__main__ import main
+
+main()
+
+</code></pre>
+<p>Spark submit command</p>
+<pre><code class="language-python">spark-submit /home/scripts/app_args.py --global-properties /home/scripts/global-properties.json --connection-properties /home/scripts/connection-properties.json /home/scripts/raw/people/people.json
 
 </code></pre>
 <h2 id="5-run-config-using-airflow">5️⃣ Run Config Using Airflow</h2>

@@ -917,23 +917,24 @@
 <hr />
 <h3 id="example-connection-configuration"><strong>Example Connection Configuration</strong></h3>
 <p>Here’s an example of how connection properties might look in a JSON configuration for connecting to a PostgreSQL database:</p>
-<p>```json
-{
-  "connection_properties": {
-    "connection_name": "postgres_connection",
-    "host": "db.example.com",
-    "port": 5432,
-    "username": "user123",
-    "password": "securepassword",
-    "database_name": "data_pipeline_db",
-    "ssl_enabled": true,
-    "connection_timeout": 30,
-    "extra_options": {
-      "ssl_cert_path": "/path/to/ssl/certificate",
-      "pool_size": 10
+<pre><code class="language-json">{
+  &quot;connection_properties&quot;: {
+    &quot;connection_name&quot;: &quot;postgres_connection&quot;,
+    &quot;host&quot;: &quot;db.example.com&quot;,
+    &quot;port&quot;: 5432,
+    &quot;username&quot;: &quot;user123&quot;,
+    &quot;password&quot;: &quot;securepassword&quot;,
+    &quot;database_name&quot;: &quot;data_pipeline_db&quot;,
+    &quot;ssl_enabled&quot;: true,
+    &quot;connection_timeout&quot;: 30,
+    &quot;extra_options&quot;: {
+      &quot;ssl_cert_path&quot;: &quot;/path/to/ssl/certificate&quot;,
+      &quot;pool_size&quot;: 10
     }
   }
-}</p>
+}
+
+</code></pre>
 <h3 id="conclusion"><strong>Conclusion</strong></h3>
 <p>The <strong>Connection Properties</strong> are essential for establishing secure and efficient connections between your data pipeline and external systems. By defining these properties, you can configure various connection settings such as authentication, encryption, timeouts, and more. This flexibility ensures your pipeline can seamlessly interact with different data sources and destinations, whether it's a database, file system, or message queue.</p>
 <p>Proper management of connection properties is key to ensuring smooth and reliable data flow across your pipeline. Security features like SSL encryption, as well as customizable timeouts and additional settings, allow for a secure and performant connection to external resources.</p>

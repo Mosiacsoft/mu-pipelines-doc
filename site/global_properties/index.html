@@ -892,22 +892,23 @@
 <hr />
 <h3 id="example-global-properties-for-spark"><strong>Example Global Properties for Spark</strong></h3>
 <p>Here’s an example of a JSON configuration for Spark global properties:</p>
-<p>```json
-{
-  "global_properties": {
-    "spark_master": "spark://spark-cluster:7077",
-    "spark_app_name": "data_pipeline_app",
-    "spark_executor_cores": 4,
-    "spark_executor_memory": "8g",
-    "spark_driver_memory": "4g",
-    "spark_sql.shuffle_partitions": 200,
-    "spark_event_log_dir": "/tmp/spark-logs",
-    "spark_conf": {
-      "spark.sql.autoBroadcastJoinThreshold": "10485760",
-      "spark.sql.shuffle.partitions": "100"
+<pre><code class="language-json">{
+  &quot;global_properties&quot;: {
+    &quot;spark_master&quot;: &quot;spark://spark-cluster:7077&quot;,
+    &quot;spark_app_name&quot;: &quot;data_pipeline_app&quot;,
+    &quot;spark_executor_cores&quot;: 4,
+    &quot;spark_executor_memory&quot;: &quot;8g&quot;,
+    &quot;spark_driver_memory&quot;: &quot;4g&quot;,
+    &quot;spark_sql.shuffle_partitions&quot;: 200,
+    &quot;spark_event_log_dir&quot;: &quot;/tmp/spark-logs&quot;,
+    &quot;spark_conf&quot;: {
+      &quot;spark.sql.autoBroadcastJoinThreshold&quot;: &quot;10485760&quot;,
+      &quot;spark.sql.shuffle.partitions&quot;: &quot;100&quot;
     }
   }
-}</p>
+}
+
+</code></pre>
 
 
 
