@@ -3,29 +3,6 @@
 
 The `IngestCSV` is used to read and load data from a **CSV file** into the pipeline. It provides configuration options like **file location**, **delimiter**, **quote characters**, and **headers** to accommodate different CSV formats.
 
-### **JSON Configuration Example**
-
-```json
-{
-  "execution": [
-    {
-      "type": "IngestCSV",
-      "file_location": "/home/iceberg/data/file/people.csv",
-      "delimiter": ",",
-      "quotes": """,
-      "additional_attributes": [
-        {
-          "key": "header",
-          "value": "True"
-        }
-      ]
-    }
-  ]
-}
-```
-
----
-
 ### **Parameters**
 
 | Parameter              | Type    | Required   | Description |

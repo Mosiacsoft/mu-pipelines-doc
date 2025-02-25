@@ -3,21 +3,6 @@
 
 The **DestinationDefaultCatalog** destination configuration allows you to define where the data will be written in the pipeline. The destination can specify an **table** where data will be loaded, and it supports different **modes** for managing data. It can be any **hive metastore, spark managed catalog table, iceberg, delta**. It uses default spark catalog to push data to. 
 
-### **JSON Configuration Example**
-
-```json
-{
-  "destination": [
-    {
-      "type": "DestinationDefaultCatalog",
-      "table_name": "crm.raw.people",
-      "mode": "overwrite"
-    }
-  ]
-}
-```
-
----
 
 ### **Parameters**
 
