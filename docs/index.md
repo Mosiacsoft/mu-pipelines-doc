@@ -1,4 +1,4 @@
-# mu-pipelines Documentation 🚀
+# mu-pipelines documentation 🚀
 
 Welcome to the **mu-pipelines** documentation!  
 Mu-Pipelines is a **configuration-driven data pipeline platform** that enables easy **data ingestion, transformation, and orchestration** without complex coding.
@@ -14,12 +14,15 @@ Mu-Pipelines is a **configuration-driven data pipeline platform** that enables e
 For CTOs & Data Leaders:
 
 ✅ **Accelerates Data Delivery** – Move data 10x faster by eliminating manual ops.
+
 ✅ **Reduces Engineering Load** – Cut pipeline maintenance time by 40-60%, freeing engineers for higher-value work.
+
 ✅ **Minimizes Risk** – Automated testing and validation prevent costly data errors before they hit production.
 
 For Data Engineers:
 
 ✅ **No More Pipeline Firefighting** – Standardized CI/CD means fewer outages and less time fixing broken jobs.
+
 ✅ **Easier Scaling** – Configuration-driven pipelines scale without writing new custom code for every integration.
 
 
