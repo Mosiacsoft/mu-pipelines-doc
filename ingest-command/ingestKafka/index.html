@@ -20,7 +20,7 @@
     
     
       
-        <title>Read from Kafka - Mu-Pipelines Docs</title>
+        <title>Read from Kafka - mu-pipelines Docs</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#kafka-batch-ingestion-configuration" class="md-skip">
+        <a href="#kafka-batch-ingestion-configuration-coming-soon" class="md-skip">
           Skip to content
         </a>
       
@@ -78,7 +78,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Mu-Pipelines Docs" class="md-header__button md-logo" aria-label="Mu-Pipelines Docs" data-md-component="logo">
+    <a href="../.." title="mu-pipelines Docs" class="md-header__button md-logo" aria-label="mu-pipelines Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -92,7 +92,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Mu-Pipelines Docs
+            mu-pipelines Docs
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -185,13 +185,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Mu-Pipelines Docs" class="md-nav__button md-logo" aria-label="Mu-Pipelines Docs" data-md-component="logo">
+    <a href="../.." title="mu-pipelines Docs" class="md-nav__button md-logo" aria-label="mu-pipelines Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    Mu-Pipelines Docs
+    mu-pipelines Docs
   </label>
   
     <div class="md-nav__source">
@@ -864,7 +864,7 @@
 
 
 
-<h1 id="kafka-batch-ingestion-configuration">Kafka Batch Ingestion Configuration</h1>
+<h1 id="kafka-batch-ingestion-configuration-coming-soon">Kafka Batch Ingestion Configuration - Coming Soon</h1>
 <h3 id="kafka-batch-ingestion-configuration-example">Kafka Batch Ingestion Configuration Example</h3>
 <p>To ingest data from a Kafka topic in <strong>batch mode</strong>, you would typically configure your pipeline to read data from Kafka at fixed intervals, similar to how batch jobs are run. Below is an example configuration for ingesting data in batch mode from Kafka.</p>
 <pre><code class="language-json">{
@@ -891,12 +891,12 @@
 </code></pre>
 <hr />
 <h3 id="kafka-batch-ingestion-command-documentation">Kafka Batch Ingestion Command Documentation 📥</h3>
-<p>The <strong>KafkaReadCommand</strong> can be used in <strong>batch mode</strong> to periodically read messages from a Kafka topic at specified intervals. The configuration includes parameters to handle batch timing, max poll records, and other Kafka consumer settings.</p>
+<p>The <strong>IngestKafka</strong> can be used in <strong>batch mode</strong> to periodically read messages from a Kafka topic at specified intervals. The configuration includes parameters to handle batch timing, max poll records, and other Kafka consumer settings.</p>
 <h4 id="json-configuration-example">JSON Configuration Example</h4>
 <pre><code class="language-json">{
   &quot;execution&quot;: [
     {
-      &quot;type&quot;: &quot;KafkaRead&quot;,
+      &quot;type&quot;: &quot;IngestKafka&quot;,
       &quot;bootstrap_servers&quot;: &quot;localhost:9092&quot;,
       &quot;topic&quot;: &quot;example-topic&quot;,
       &quot;group_id&quot;: &quot;batch-consumer-group&quot;,
@@ -931,7 +931,7 @@
 <td><code>type</code></td>
 <td>String</td>
 <td>✅ Yes</td>
-<td>The type of command (<code>KafkaReadCommand</code>).</td>
+<td>The type of command (<code>IngestKafka</code>).</td>
 </tr>
 <tr>
 <td><code>bootstrap_servers</code></td>
@@ -1045,7 +1045,7 @@
 <h3 id="related-commands">Related Commands</h3>
 <hr />
 <h3 id="conclusion">Conclusion</h3>
-<p>The <strong>KafkaReadCommand</strong> in <strong>batch mode</strong> is a powerful way to periodically ingest data from Kafka topics. By configuring parameters like <strong><code>batch_interval</code></strong>, <strong><code>max_poll_records</code></strong>, and <strong><code>auto_offset_reset</code></strong>, you can control how and when Kafka data is ingested, making it well-suited for periodic or batch-based processing in your data pipeline.</p>
+<p>The <strong>IngestKafka</strong> in <strong>batch mode</strong> is a powerful way to periodically ingest data from Kafka topics. By configuring parameters like <strong><code>batch_interval</code></strong>, <strong><code>max_poll_records</code></strong>, and <strong><code>auto_offset_reset</code></strong>, you can control how and when Kafka data is ingested, making it well-suited for periodic or batch-based processing in your data pipeline.</p>
 
 
 

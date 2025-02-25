@@ -20,7 +20,7 @@
     
     
       
-        <title>Read from CSV - Mu-Pipelines Docs</title>
+        <title>Read from CSV - mu-pipelines Docs</title>
       
     
     
@@ -78,7 +78,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Mu-Pipelines Docs" class="md-header__button md-logo" aria-label="Mu-Pipelines Docs" data-md-component="logo">
+    <a href="../.." title="mu-pipelines Docs" class="md-header__button md-logo" aria-label="mu-pipelines Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -92,7 +92,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Mu-Pipelines Docs
+            mu-pipelines Docs
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -185,13 +185,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Mu-Pipelines Docs" class="md-nav__button md-logo" aria-label="Mu-Pipelines Docs" data-md-component="logo">
+    <a href="../.." title="mu-pipelines Docs" class="md-nav__button md-logo" aria-label="mu-pipelines Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    Mu-Pipelines Docs
+    mu-pipelines Docs
   </label>
   
     <div class="md-nav__source">
@@ -908,7 +908,7 @@
 <td><code>type</code></td>
 <td>String</td>
 <td>✅ Yes</td>
-<td>Specifies the type of the command (<code>CSVReadCommand</code>).</td>
+<td>Specifies the type of the command (<code>IngestCSV</code>).</td>
 </tr>
 <tr>
 <td><code>file_location</code></td>
@@ -959,7 +959,7 @@
 <pre><code class="language-json">{
   &quot;execution&quot;: [
     {
-      &quot;type&quot;: &quot;CSVRead&quot;,
+      &quot;type&quot;: &quot;IngestCSV&quot;,
       &quot;file_location&quot;: &quot;/home/iceberg/data/file/people.csv&quot;,
       &quot;delimiter&quot;: &quot;,&quot;,
       &quot;quotes&quot;: &quot;&quot;&quot;,
@@ -984,12 +984,12 @@
 <hr />
 <h3 id="related-commands"><strong>Related Commands</strong></h3>
 <ul>
-<li><strong>destinationCSV</strong>: For writing data back into a CSV file.</li>
+<li><strong>DestinationCSV</strong>: For writing data back into a CSV file.</li>
 <li><strong>TransformSQL</strong>: For transforming the data after reading it.</li>
 </ul>
 <hr />
 <h3 id="conclusion"><strong>Conclusion</strong></h3>
-<p>The <strong>CSVRead</strong> is a flexible and configurable way to read CSV files into your pipeline, allowing for custom delimiters, quotes, and handling of headers.</p>
+<p>The <strong>IngestCSV</strong> is a flexible and configurable way to read CSV files into your pipeline, allowing for custom delimiters, quotes, and handling of headers.</p>
 
 
 

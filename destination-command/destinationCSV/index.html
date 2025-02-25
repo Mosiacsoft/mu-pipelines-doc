@@ -20,7 +20,7 @@
     
     
       
-        <title>Write to CSV - Mu-Pipelines Docs</title>
+        <title>Write to CSV - mu-pipelines Docs</title>
       
     
     
@@ -78,7 +78,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Mu-Pipelines Docs" class="md-header__button md-logo" aria-label="Mu-Pipelines Docs" data-md-component="logo">
+    <a href="../.." title="mu-pipelines Docs" class="md-header__button md-logo" aria-label="mu-pipelines Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -92,7 +92,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Mu-Pipelines Docs
+            mu-pipelines Docs
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -185,13 +185,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Mu-Pipelines Docs" class="md-nav__button md-logo" aria-label="Mu-Pipelines Docs" data-md-component="logo">
+    <a href="../.." title="mu-pipelines Docs" class="md-nav__button md-logo" aria-label="mu-pipelines Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    Mu-Pipelines Docs
+    mu-pipelines Docs
   </label>
   
     <div class="md-nav__source">
@@ -627,11 +627,11 @@
 {
   "destination": [
     {
-      "type": "CSV",
+      "type": "destinationCSV",
       "file_location": "/home/data/output/processed_data.csv",
       "delimiter": ",",
       "header": true,
-      "quote_char": "\"",
+      "quotes": "\"",
       "additional_attributes": [
         { "key": "mode", "value": "overwrite" }
       ]
@@ -654,7 +654,7 @@
 <td><code>type</code></td>
 <td>String</td>
 <td>✅ Yes</td>
-<td>The type of command (<code>CSV</code>).</td>
+<td>The type of command (<code>destinationCSV</code>).</td>
 </tr>
 <tr>
 <td><code>file_location</code></td>
@@ -675,7 +675,7 @@
 <td>Whether to include a header row in the CSV file (<code>true</code> or <code>false</code>).</td>
 </tr>
 <tr>
-<td><code>quote_char</code></td>
+<td><code>quotes</code></td>
 <td>String</td>
 <td>✅ Yes</td>
 <td>The character used to quote strings in the CSV file (e.g., <code>"</code>).</td>
@@ -692,7 +692,7 @@
 <h3 id="detailed-explanation-of-parameters"><strong>Detailed Explanation of Parameters</strong></h3>
 <ul>
 <li>
-<p><strong><code>type</code></strong>: Always set to <code>"CSV"</code>. This indicates that the destination is a CSV file.</p>
+<p><strong><code>type</code></strong>: Always set to <code>"destinationCSV"</code>. This indicates that the destination is a CSV file.</p>
 </li>
 <li>
 <p><strong><code>file_location</code></strong>: The file path where the CSV data will be written. This can be either an absolute or a relative file path. For example, <code>/home/data/output/processed_data.csv</code>. The file will be created at the given location if it does not already exist.</p>
@@ -704,7 +704,7 @@
 <p><strong><code>header</code></strong>: If set to <code>true</code>, the CSV file will include a header row containing the column names. If set to <code>false</code>, no header row will be included.</p>
 </li>
 <li>
-<p><strong><code>quote_char</code></strong>: Defines the character used to quote string values in the CSV file. This is typically used to enclose values that contain special characters or delimiters. The default is double-quote (<code>"</code>), but you can specify other characters like single-quote (<code>'</code>).</p>
+<p><strong><code>quotes</code></strong>: Defines the character used to quote string values in the CSV file. This is typically used to enclose values that contain special characters or delimiters. The default is double-quote (<code>"</code>), but you can specify other characters like single-quote (<code>'</code>).</p>
 </li>
 <li>
 <p><strong><code>additional_attributes</code></strong>: This is an optional parameter. It allows for extra configuration. For example, you might use this to specify the <code>mode</code> of writing to the file. Common modes are:</p>
@@ -716,15 +716,7 @@
 <p>The <strong>DestinationCSV</strong> command provides an easy way to write processed data into CSV files, with full control over the formatting, delimiters, headers, and other aspects of the CSV file. This configuration is particularly useful for creating human-readable, portable data files that can be easily shared or imported into other systems. It offers a simple interface for configuring output files, making it suitable for use cases where CSV files need to be written as a part of a data pipeline.</p>
 <h3 id="related-commands"><strong>Related Commands</strong></h3>
 <ul>
-<li>
-<p><strong>SourceCSV</strong>: Reads data from a CSV file and uses it as input for your data pipeline. This command is helpful when you're looking to ingest data from CSV files for further processing.</p>
-</li>
-<li>
-<p><strong>FileSinkCommand</strong>: For writing data to files in various formats like Parquet, JSON, etc. Use this command when working with other file formats, and it supports a variety of output destinations.</p>
-</li>
-<li>
-<p><strong>TransformCommand</strong>: Used to apply transformations to data before writing it to a destination like CSV. This command allows you to modify data structures, clean data, or perform computations before it reaches its destination.</p>
-</li>
+<li><strong>IngestCSV</strong>: Reads data from a CSV file and uses it as input for your data pipeline. This command is helpful when you're looking to ingest data from CSV files for further processing.</li>
 </ul>
 
 
