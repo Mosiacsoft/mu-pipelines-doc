@@ -66,6 +66,7 @@ Here’s an example of how connection properties might look in a JSON configurat
   }
 }
 
+```
 ### **Conclusion**
 
 The **Connection Properties** are essential for establishing secure and efficient connections between your data pipeline and external systems. By defining these properties, you can configure various connection settings such as authentication, encryption, timeouts, and more. This flexibility ensures your pipeline can seamlessly interact with different data sources and destinations, whether it's a database, file system, or message queue.

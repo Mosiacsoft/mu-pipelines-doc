@@ -62,3 +62,5 @@ Here’s an example of a JSON configuration for Spark global properties:
     }
   }
 }
+
+```

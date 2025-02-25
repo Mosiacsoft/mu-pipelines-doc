@@ -1,8 +1,8 @@
-# transformSQL Command Documentation - Coming Soon
+# TransformSQL Command Documentation - Coming Soon
 
-### **transformSQL Command Configuration Example**
+### **TransformSQL Command Configuration Example**
 
-The **transformSQL** command allows you to apply SQL transformations to your data before it is written to the destination. It is useful for performing data processing, filtering, aggregations, and other SQL-based operations within your data pipeline.
+The **TransformSQL** command allows you to apply SQL transformations to your data before it is written to the destination. It is useful for performing data processing, filtering, aggregations, and other SQL-based operations within your data pipeline.
 
 ```json
 {
@@ -13,6 +13,8 @@ The **transformSQL** command allows you to apply SQL transformations to your dat
     }
   ]
 }
+
+```
 
 ### **Detailed Explanation of Parameters**
 

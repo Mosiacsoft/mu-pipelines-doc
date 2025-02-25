@@ -58,6 +58,7 @@ Here’s an example of how the **IngestJDBC** command might be configured to per
     }
   ]
 }
+```
 
 ### **Conclusion**
 

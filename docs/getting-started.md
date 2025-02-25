@@ -1,8 +1,8 @@
-# Welcome to Mu-Pipelines!
+# Welcome to mu-pipelines!
 
 This guide will help you set up and run Mu-Pipelines.
 
-## 1️⃣ Install Mu-Pipelines
+## 1️⃣ Install mu-pipelines
 Ensure you have Python 3 installed, then run:
 
 ```sh
@@ -69,14 +69,15 @@ You can run a config in production spark by using spark submit
 
 Create a sample python script o import module 
 
-``` Sample app_args.py file 
+```python
 from mu_pipelines_driver.__main__ import main
 
 main()
 
 ```
+Spark submit command
 
-``` spark submit command
+``` python
 spark-submit /home/scripts/app_args.py --global-properties /home/scripts/global-properties.json --connection-properties /home/scripts/connection-properties.json /home/scripts/raw/people/people.json
 
 ```
