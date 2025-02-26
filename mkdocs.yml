@@ -21,6 +21,11 @@ nav:
   - Developer Docs: 
       CI-CD: Developer Docs\CI-CD.md
       How to create data mesh: Developer Docs\How to create data mesh.md
+  - Demo Videos: 
+      Introduction: Demo Videos\Introduction.md
+      Basic Setup: Demo Videos\Basic Setup.md
+      Use in databricks: Demo Videos\Use in databricks.md
+
   - FAQ: faq.md
 
 repo_url: "https://mosaicsoft-data.github.io/mu-pipelines-doc/"
