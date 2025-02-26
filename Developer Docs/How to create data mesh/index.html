@@ -949,7 +949,7 @@
 
 
 
-<h1 id="creating-a-data-mesh-with-mu-pipelines">Creating a Data Mesh with mu-pipelines</h1>
+<h1 id="creating-a-data-mesh-with-mu-pipelines"><strong>Creating a Data Mesh with mu-pipelines</strong></h1>
 <h2 id="overview">Overview</h2>
 <p>In a modern data architecture, a <strong>Data Mesh</strong> is an emerging approach to decentralizing data ownership, treating data as a product, and enabling scalable data pipelines. mu-pipelines, a configuration-driven data pipeline platform, helps you implement a Data Mesh by providing an easy-to-use, open-source toolset that integrates multiple technologies while offering flexibility and automation.</p>
 <p>This document will guide you through the steps to create a Data Mesh using mu-pipelines.</p>
@@ -960,10 +960,12 @@
 <li>Knowledge of the tools that will be integrated into mu-pipelines (e.g., Kafka, Delta Lake, Iceberg).</li>
 </ul>
 <h3 id="understanding-of-the-data-mesh-principles">Understanding of the Data Mesh principles:</h3>
-<p><strong>Domain-Oriented Data Ownership</strong>
-<strong>Data as a Product</strong>
-<strong>Self-Serve Data Infrastructure</strong>
-<strong>Federated Computational Governance</strong></p>
+<ul>
+<li><strong>Domain-Oriented Data Ownership</strong></li>
+<li><strong>Data as a Product</strong></li>
+<li><strong>Self-Serve Data Infrastructure</strong></li>
+<li><strong>Federated Computational Governance</strong></li>
+</ul>
 <h3 id="define-your-data-domains">Define Your Data Domains</h3>
 <p>In a Data Mesh, data is organized into domains—individual business or operational units responsible for their data products. To create a Data Mesh with mu-pipelines, you first need to define the domains and ensure that each domain can independently own, manage, and expose data.</p>
 <p>Example:</p>
@@ -973,8 +975,8 @@
 <li><strong>Finance Domain:</strong> Billing, revenue, and financial reporting data.</li>
 </ul>
 <p>Each domain should have:</p>
-<p>A <strong>data owner</strong> responsible for managing and curating the data.
-A <strong>data product</strong> that other domains can consume or interact with.</p>
+<p>A <strong>data owner</strong> responsible for managing and curating the data.</p>
+<p>A <strong>data product</strong> that other domains can consume or interact with.</p>
 <h3 id="set-up-data-pipeline-repositories">Set Up Data Pipeline Repositories</h3>
 <p>Each domain is responsible for creating a repository that will house the data in its specific layers. These repositories are where all the data processing takes place.</p>
 <p>Example repository structure for the Sales Domain:</p>
