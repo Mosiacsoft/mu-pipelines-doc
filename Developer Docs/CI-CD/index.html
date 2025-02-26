@@ -110,43 +110,6 @@
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
-        </button>
-      </nav>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list" role="presentation"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-    
     
       <div class="md-header__source">
         <a href="https://mosaicsoft-data.github.io/mu-pipelines-doc/" title="Go to repository" class="md-source" data-md-component="source">
@@ -1124,39 +1087,39 @@
 
 
 
-<h1 id="how-mu-pipelines-enables-cicd-for-data-pipelines">How Mu-Pipelines Enables CI/CD for Data Pipelines</h1>
+<div><h1 id="how-mu-pipelines-enables-cicd-for-data-pipelines">How Mu-Pipelines Enables CI/CD for Data Pipelines</h1>
 <h2 id="introduction">🚀 Introduction</h2>
 <p>CI/CD has transformed software engineering, but data engineering still struggles with fragile, manual pipelines. <strong>Mu-Pipelines</strong> brings <strong>modern DevOps principles to data</strong> by enabling <strong>automated testing, version control, and seamless deployment</strong> for your data pipelines.</p>
-<hr />
+<hr>
 <h2 id="key-features">🔧 Key Features</h2>
 <h3 id="configuration-driven-pipelines">✅ Configuration-Driven Pipelines</h3>
 <p>Define your entire pipeline using simple JSON configurations, making it easy to manage and version pipelines.  </p>
 <pre><code class="language-json">[
     {
-        &quot;execution&quot;: [
+        "execution": [
             {
-                &quot;type&quot;: &quot;CSVReadCommand&quot;,
-                &quot;file_location&quot;: &quot;/home/iceberg/warehouse/data/people.csv&quot;,
-                &quot;delimiter&quot;: &quot;,&quot;,
-                &quot;quotes&quot;: &quot;\&quot;&quot; ,
-                &quot;additional_attributes&quot;: [
-                    { &quot;key&quot;: &quot;header&quot;, &quot;value&quot;: &quot;True&quot; },
+                "type": "CSVReadCommand",
+                "file_location": "/home/iceberg/warehouse/data/people.csv",
+                "delimiter": ",",
+                "quotes": "\"" ,
+                "additional_attributes": [
+                    { "key": "header", "value": "True" },
                 ]
             }
         ],
-        &quot;destination&quot;: [
+        "destination": [
             {
-                &quot;type&quot;: &quot;postgres&quot;,
-                &quot;connection&quot;:&quot;my-postgres&quot;,
-                &quot;table_name&quot;: &quot;crm.raw.people&quot;,
-                &quot;mode&quot;: &quot;overwrite&quot;
+                "type": "postgres",
+                "connection":"my-postgres",
+                "table_name": "crm.raw.people",
+                "mode": "overwrite"
             }
         ]
     }
 ]
 
 </code></pre>
-<hr />
+<hr>
 <h3 id="git-based-version-control">🔀 Git-Based Version Control</h3>
 <ul>
 <li>Every pipeline is <strong>stored as code</strong> and managed through Git.</li>
@@ -1181,7 +1144,7 @@ jobs:
       - name: Run Mu-Pipelines Deployment
         run: mu-pipelines deploy --config user_events_pipeline.yaml
 </code></pre>
-<hr />
+<hr>
 <h3 id="automated-testing-for-data-pipelines">🧪 Automated Testing for Data Pipelines</h3>
 <p>Data pipelines need rigorous testing before deployment. Mu-Pipelines enables:</p>
 <p><strong>Unit tests</strong> for transformations.
@@ -1193,7 +1156,7 @@ jobs:
     run: great_expectations checkpoint run user_events_pipeline
 
 </code></pre>
-<hr />
+<hr>
 <h3 id="seamless-deployment-rollbacks">🚀 Seamless Deployment &amp; Rollbacks</h3>
 <p>Push changes → <strong>Pipelines automatically deploy</strong> to production.
 Supports <strong>blue-green deployments</strong> to prevent downtime.
@@ -1203,7 +1166,7 @@ Supports <strong>blue-green deployments</strong> to prevent downtime.
 git revert &lt;commit-hash&gt;
 
 </code></pre>
-<hr />
+<hr>
 <h3 id="monitoring-observability">📊 Monitoring &amp; Observability</h3>
 <p>Real-time logs &amp; alerts for pipeline failures.
 Metrics dashboards for pipeline performance.
@@ -1213,22 +1176,22 @@ Auto-retries &amp; self-healing pipelines when issues occur.</p>
 alerts:
   on_failure:
     - notify: slack
-      channel: &quot;#data-alerts&quot;
+      channel: "#data-alerts"
     - notify: email
-      to: &quot;data-team@example.com&quot;
+      to: "data-team@example.com"
 
 </code></pre>
-<hr />
+<hr>
 <h2 id="why-this-matters">🎯 Why This Matters</h2>
 <h3 id="without-cicd-data-teams-struggle-with">Without CI/CD, data teams struggle with:</h3>
 <p>❌ Fragile, untested pipelines breaking in production.</p>
 <p>❌ Lack of version control, making debugging a nightmare.</p>
 <p>❌ Manual deployments slowing down innovation.</p>
-<hr />
+<hr>
 <h3 id="with-mu-pipelines-you-get">With Mu-Pipelines, you get:</h3>
 <p>✅ Reliable, automated pipelines that ship faster.</p>
 <p>✅ Reproducibility &amp; rollback support with Git.</p>
-<p>✅ Self-service deployment for data teams without DevOps bottlenecks.</p>
+<p>✅ Self-service deployment for data teams without DevOps bottlenecks.</p></div>
 
 
 

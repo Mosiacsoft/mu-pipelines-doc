@@ -110,43 +110,6 @@
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
-        </button>
-      </nav>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list" role="presentation"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-    
     
       <div class="md-header__source">
         <a href="https://mosaicsoft-data.github.io/mu-pipelines-doc/" title="Go to repository" class="md-source" data-md-component="source">
@@ -1010,7 +973,7 @@
 
 
 
-<h1 id="streamkafkaiceberg-command-documentation-coming-soon">StreamKafkaIceberg Command Documentation - Coming Soon</h1>
+<div><h1 id="streamkafkaiceberg-command-documentation-coming-soon">StreamKafkaIceberg Command Documentation - Coming Soon</h1>
 <h3 id="overview"><strong>Overview</strong></h3>
 <p>The <strong>StreamKafkaIceberg</strong> command facilitates the streaming ingestion of data from Apache Kafka into an Iceberg table. This command is ideal for real-time data pipelines where you want to capture streaming data from Kafka topics and store it in Iceberg tables with ACID compliance and schema evolution capabilities.</p>
 <p>This command supports consuming data from Kafka topics in real-time and writing it to Iceberg tables, enabling you to leverage Iceberg's powerful features like partitioning, schema evolution, and efficient querying for analytical workloads.</p>
@@ -1081,7 +1044,7 @@
 </tr>
 </tbody>
 </table>
-<hr />
+<hr>
 <h3 id="detailed-explanation-of-parameters"><strong>Detailed Explanation of Parameters</strong></h3>
 <ul>
 <li>
@@ -1112,7 +1075,7 @@
 <p><strong><code>max_offset</code></strong>: The maximum Kafka offset to consume messages up to. If not provided, it defaults to consuming from the latest offset, i.e., only new messages that arrive after the job starts.</p>
 </li>
 </ul>
-<hr />
+<hr>
 <h3 id="example-streamkafkaiceberg-command"><strong>Example StreamKafkaIceberg Command</strong></h3>
 <p>Below is an example configuration for streaming data from a Kafka topic into an Iceberg table:</p>
 <p>```json
@@ -1134,7 +1097,7 @@
 <h3 id="conclusion"><strong>Conclusion</strong></h3>
 <p>The StreamKafkaIceberg command is an essential tool for real-time data ingestion in a data pipeline. It leverages Apache Kafka as a source for streaming data and Iceberg as the destination for structured and high-performance storage. This combination of streaming with Kafka and efficient data management with Iceberg enables the creation of scalable, reliable, and performant data pipelines.</p>
 <p>With the ability to dynamically consume data from Kafka topics and write to Iceberg tables, you get the benefit of real-time analytics, partitioned storage, schema evolution, and ACID compliance.</p>
-<p>By configuring checkpointing and offset management, this command supports fault tolerance and exactly-once processing semantics, ensuring your data pipeline is robust and capable of handling large volumes of real-time data.</p>
+<p>By configuring checkpointing and offset management, this command supports fault tolerance and exactly-once processing semantics, ensuring your data pipeline is robust and capable of handling large volumes of real-time data.</p></div>
 
 
 

@@ -110,43 +110,6 @@
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
-        </button>
-      </nav>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list" role="presentation"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-    
     
       <div class="md-header__source">
         <a href="https://mosaicsoft-data.github.io/mu-pipelines-doc/" title="Go to repository" class="md-source" data-md-component="source">
@@ -1106,33 +1069,33 @@
 
 
 
-<h1 id="kafka-batch-ingestion-configuration-coming-soon">Kafka Batch Ingestion Configuration - Coming Soon</h1>
+<div><h1 id="kafka-batch-ingestion-configuration-coming-soon">Kafka Batch Ingestion Configuration - Coming Soon</h1>
 <h3 id="kafka-batch-ingestion-command-documentation">Kafka Batch Ingestion Command Documentation 📥</h3>
 <p>The <strong>IngestKafka</strong> can be used in <strong>batch mode</strong> to periodically read messages from a Kafka topic at specified intervals. The configuration includes parameters to handle batch timing, max poll records, and other Kafka consumer settings.</p>
 <h4 id="json-configuration-example">JSON Configuration Example</h4>
 <pre><code class="language-json">{
-  &quot;execution&quot;: [
+  "execution": [
     {
-      &quot;type&quot;: &quot;IngestKafka&quot;,
-      &quot;bootstrap_servers&quot;: &quot;localhost:9092&quot;,
-      &quot;topic&quot;: &quot;example-topic&quot;,
-      &quot;group_id&quot;: &quot;batch-consumer-group&quot;,
-      &quot;key_deserializer&quot;: &quot;org.apache.kafka.common.serialization.StringDeserializer&quot;,
-      &quot;value_deserializer&quot;: &quot;org.apache.kafka.common.serialization.StringDeserializer&quot;,
-      &quot;auto_offset_reset&quot;: &quot;earliest&quot;,
-      &quot;batch_interval&quot;: 60000,  // 60 seconds, adjust as needed
-      &quot;max_poll_records&quot;: 1000,
-      &quot;additional_attributes&quot;: [
+      "type": "IngestKafka",
+      "bootstrap_servers": "localhost:9092",
+      "topic": "example-topic",
+      "group_id": "batch-consumer-group",
+      "key_deserializer": "org.apache.kafka.common.serialization.StringDeserializer",
+      "value_deserializer": "org.apache.kafka.common.serialization.StringDeserializer",
+      "auto_offset_reset": "earliest",
+      "batch_interval": 60000,  // 60 seconds, adjust as needed
+      "max_poll_records": 1000,
+      "additional_attributes": [
         {
-          &quot;key&quot;: &quot;enable.auto.commit&quot;,
-          &quot;value&quot;: &quot;false&quot;
+          "key": "enable.auto.commit",
+          "value": "false"
         }
       ]
     }
   ]
 }
 </code></pre>
-<hr />
+<hr>
 <h3 id="parameters">Parameters</h3>
 <table>
 <thead>
@@ -1206,7 +1169,7 @@
 </tr>
 </tbody>
 </table>
-<hr />
+<hr>
 <h3 id="batch-mode-specific-parameters">Batch Mode Specific Parameters</h3>
 <ul>
 <li>
@@ -1216,33 +1179,33 @@
 <p><strong><code>max_poll_records</code></strong>: Controls the maximum number of records to fetch in each batch. Adjust this based on your performance needs.</p>
 </li>
 </ul>
-<hr />
+<hr>
 <h3 id="example-use-case">Example Use Case</h3>
 <p><strong>Scenario:</strong> You want to read data from the <code>example-topic</code> Kafka topic in batch mode every 60 seconds, using a consumer group called <code>batch-consumer-group</code>, with a maximum of 1000 records per poll.</p>
 <h4 id="json-configuration">JSON Configuration:</h4>
 <pre><code class="language-json">{
-  &quot;execution&quot;: [
+  "execution": [
     {
-      &quot;type&quot;: &quot;KafkaRead&quot;,
-      &quot;bootstrap_servers&quot;: &quot;localhost:9092&quot;,
-      &quot;topic&quot;: &quot;example-topic&quot;,
-      &quot;group_id&quot;: &quot;batch-consumer-group&quot;,
-      &quot;key_deserializer&quot;: &quot;org.apache.kafka.common.serialization.StringDeserializer&quot;,
-      &quot;value_deserializer&quot;: &quot;org.apache.kafka.common.serialization.StringDeserializer&quot;,
-      &quot;auto_offset_reset&quot;: &quot;earliest&quot;,
-      &quot;batch_interval&quot;: 60000,  // 60 seconds, adjust as needed
-      &quot;max_poll_records&quot;: 1000,
-      &quot;additional_attributes&quot;: [
+      "type": "KafkaRead",
+      "bootstrap_servers": "localhost:9092",
+      "topic": "example-topic",
+      "group_id": "batch-consumer-group",
+      "key_deserializer": "org.apache.kafka.common.serialization.StringDeserializer",
+      "value_deserializer": "org.apache.kafka.common.serialization.StringDeserializer",
+      "auto_offset_reset": "earliest",
+      "batch_interval": 60000,  // 60 seconds, adjust as needed
+      "max_poll_records": 1000,
+      "additional_attributes": [
         {
-          &quot;key&quot;: &quot;enable.auto.commit&quot;,
-          &quot;value&quot;: &quot;false&quot;
+          "key": "enable.auto.commit",
+          "value": "false"
         }
       ]
     }
   ]
 }
 </code></pre>
-<hr />
+<hr>
 <h3 id="behavior">Behavior</h3>
 <ul>
 <li>
@@ -1258,11 +1221,11 @@
 <p><strong><code>additional_attributes</code></strong>: Allows additional settings for the Kafka consumer. For example, setting <code>enable.auto.commit</code> to <code>false</code> ensures that offsets are not automatically committed, giving you more control over when offsets are committed.</p>
 </li>
 </ul>
-<hr />
+<hr>
 <h3 id="related-commands">Related Commands</h3>
-<hr />
+<hr>
 <h3 id="conclusion">Conclusion</h3>
-<p>The <strong>IngestKafka</strong> in <strong>batch mode</strong> is a powerful way to periodically ingest data from Kafka topics. By configuring parameters like <strong><code>batch_interval</code></strong>, <strong><code>max_poll_records</code></strong>, and <strong><code>auto_offset_reset</code></strong>, you can control how and when Kafka data is ingested, making it well-suited for periodic or batch-based processing in your data pipeline.</p>
+<p>The <strong>IngestKafka</strong> in <strong>batch mode</strong> is a powerful way to periodically ingest data from Kafka topics. By configuring parameters like <strong><code>batch_interval</code></strong>, <strong><code>max_poll_records</code></strong>, and <strong><code>auto_offset_reset</code></strong>, you can control how and when Kafka data is ingested, making it well-suited for periodic or batch-based processing in your data pipeline.</p></div>
 
 
 
