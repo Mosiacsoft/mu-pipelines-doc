@@ -9,7 +9,7 @@ Mu-Pipelines is a **configuration-driven data pipeline platform** that enables e
 - **Seamless Data Integration**: Supports Iceberg, Delta Lake, and more.
 - **Lightweight & Scalable**: Configuration-based, no heavy setup required.
 
-🚀 Why mu-pipelines? 
+## 🚀 Why mu-pipelines? 
 
 For CTOs & Data Leaders:
 

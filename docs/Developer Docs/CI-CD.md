@@ -8,7 +8,7 @@ CI/CD has transformed software engineering, but data engineering still struggles
 ## 🔧 Key Features  
 
 ### ✅ Configuration-Driven Pipelines  
-Define your entire pipeline using simple YAML configurations, making it easy to manage and version pipelines.  
+Define your entire pipeline using simple JSON configurations, making it easy to manage and version pipelines.  
 
 ``` json
 [
@@ -122,12 +122,19 @@ alerts:
 ## 🎯 Why This Matters
 
 ### Without CI/CD, data teams struggle with:
+
 ❌ Fragile, untested pipelines breaking in production.
+
 ❌ Lack of version control, making debugging a nightmare.
+
 ❌ Manual deployments slowing down innovation.
+
 
 ---
 ### With Mu-Pipelines, you get:
+
 ✅ Reliable, automated pipelines that ship faster.
+
 ✅ Reproducibility & rollback support with Git.
+
 ✅ Self-service deployment for data teams without DevOps bottlenecks.

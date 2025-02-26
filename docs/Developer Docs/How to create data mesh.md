@@ -1,4 +1,4 @@
-# Creating a Data Mesh with mu-pipelines
+# **Creating a Data Mesh with mu-pipelines**
 
 ## Overview
 
@@ -15,10 +15,10 @@ Before you start, ensure you have the following:
 
 ### Understanding of the Data Mesh principles:
 
-**Domain-Oriented Data Ownership**
-**Data as a Product**
-**Self-Serve Data Infrastructure**
-**Federated Computational Governance**
+- **Domain-Oriented Data Ownership**
+- **Data as a Product**
+- **Self-Serve Data Infrastructure**
+- **Federated Computational Governance**
 
 ### Define Your Data Domains
 
@@ -33,6 +33,7 @@ Example:
 Each domain should have:
 
 A **data owner** responsible for managing and curating the data.
+
 A **data product** that other domains can consume or interact with.
 
 ### Set Up Data Pipeline Repositories
