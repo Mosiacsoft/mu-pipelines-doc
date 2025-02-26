@@ -19,8 +19,8 @@ nav:
   - Connection Properties: connection_properties.md
   - Global Properties: global_properties.md
   - Developer Docs: 
-    CI-CD: Developer Docs\CI-CD.md
-    How to create data mesh: Developer Docs\How to create data mesh.md
+      CI-CD: Developer Docs\CI-CD.md
+      How to create data mesh: Developer Docs\How to create data mesh.md
   - FAQ: faq.md
 
 repo_url: "https://mosaicsoft-data.github.io/mu-pipelines-doc/"
