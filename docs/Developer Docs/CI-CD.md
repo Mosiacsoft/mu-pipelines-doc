@@ -72,8 +72,11 @@ jobs:
 Data pipelines need rigorous testing before deployment. Mu-Pipelines enables:
 
 **Unit tests** for transformations.
+
 **Data validation** using Great Expectations.
+
 **Integration tests** before deployment.
+
 
 Example: Running Data Quality Checks in CI/CD
 
@@ -88,8 +91,11 @@ steps:
 ### 🚀 Seamless Deployment & Rollbacks
 
 Push changes → **Pipelines automatically deploy** to production.
+
 Supports **blue-green deployments** to prevent downtime.
+
 **Instant rollback** to previous versions in case of failure.
+
 
 Example: Rollback a pipeline in case of failure
 
@@ -103,8 +109,11 @@ git revert <commit-hash>
 ### 📊 Monitoring & Observability
 
 Real-time logs & alerts for pipeline failures.
+
 Metrics dashboards for pipeline performance.
+
 Auto-retries & self-healing pipelines when issues occur.
+
 
 Example: Setting up pipeline failure alerts
 
