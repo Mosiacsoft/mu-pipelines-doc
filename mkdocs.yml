@@ -1,7 +1,13 @@
 site_name: "mu-pipelines Docs"
 theme:
   name: "material"
-
+plugins:
+    - mkdocs-video:
+        is_video: True
+        video_muted: True
+        video_controls: True
+        css_style:
+        width: "50%"
 nav:
   - Home: index.md
   - Getting Started: getting-started.md
@@ -25,7 +31,6 @@ nav:
       Introduction: Demo Videos\Introduction.md
       Basic Setup: Demo Videos\Basic Setup.md
       Use in databricks: Demo Videos\Use in databricks.md
-
   - FAQ: faq.md
 
 repo_url: "https://mosaicsoft-data.github.io/mu-pipelines-doc/"
