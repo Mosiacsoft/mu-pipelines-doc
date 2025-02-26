@@ -852,7 +852,6 @@
       "type": "destinationCSV",
       "file_location": "/home/data/output/processed_data.csv",
       "delimiter": ",",
-      "header": true,
       "quotes": "\"",
       "additional_attributes": [
         { "key": "mode", "value": "overwrite" }
@@ -893,12 +892,6 @@
 <td>The delimiter used to separate values in the CSV file (e.g., <code>,</code>, <code>;</code>, <code>\t</code>).</td>
 </tr>
 <tr>
-<td><code>header</code></td>
-<td>Boolean</td>
-<td>✅ Yes</td>
-<td>Whether to include a header row in the CSV file (<code>true</code> or <code>false</code>).</td>
-</tr>
-<tr>
 <td><code>quotes</code></td>
 <td>String</td>
 <td>✅ Yes</td>
@@ -925,17 +918,22 @@
 <p><strong><code>delimiter</code></strong>: Specifies the character used to separate values in the CSV file. The default is a comma (<code>,</code>), but other characters such as semicolons (<code>;</code>) or tabs (<code>\t</code>) can be used.</p>
 </li>
 <li>
-<p><strong><code>header</code></strong>: If set to <code>true</code>, the CSV file will include a header row containing the column names. If set to <code>false</code>, no header row will be included.</p>
-</li>
-<li>
 <p><strong><code>quotes</code></strong>: Defines the character used to quote string values in the CSV file. This is typically used to enclose values that contain special characters or delimiters. The default is double-quote (<code>"</code>), but you can specify other characters like single-quote (<code>'</code>).</p>
 </li>
-<li>
-<p><strong><code>additional_attributes</code></strong>: This is an optional parameter. It allows for extra configuration. For example, you might use this to specify the <code>mode</code> of writing to the file. Common modes are:</p>
-</li>
-<li><code>overwrite</code>: Replaces the existing file if it exists.</li>
-<li><code>append</code>: Adds new data to the end of the existing file.</li>
 </ul>
+<p>The <code>additional_attributes</code> parameter allows users to specify extra properties for the CSV file:</p>
+<ul>
+<li><strong>key</strong>: The name of the attribute.</li>
+<li><strong>value</strong>: The value associated with the attribute.</li>
+</ul>
+<h4 id="example-of-header-attribute"><strong>Example of Header Attribute</strong></h4>
+<pre><code class="language-json">"additional_attributes": [
+  {
+    "key": "header",
+    "value": "True"
+  }
+]
+</code></pre>
 <h3 id="conclusion"><strong>Conclusion</strong></h3>
 <p>The <strong>DestinationCSV</strong> command provides an easy way to write processed data into CSV files, with full control over the formatting, delimiters, headers, and other aspects of the CSV file. This configuration is particularly useful for creating human-readable, portable data files that can be easily shared or imported into other systems. It offers a simple interface for configuring output files, making it suitable for use cases where CSV files need to be written as a part of a data pipeline.</p>
 <h3 id="related-commands"><strong>Related Commands</strong></h3>
