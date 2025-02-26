@@ -2,9 +2,7 @@
 
 Welcome to the **mu-pipelines** documentation!  
 
-mu-pipelines is a **configuration-driven** data pipeline platform designed to simplify data ingestion, transformation, and orchestration. Whether you're building a **data mesh** architecture or automating **CI/CD** pipelines, mu-pipelines provides the tools to simplify complex workflows and accelerate data delivery without the need for custom code.
-
-
+mu-pipelines is a **configuration-driven platform** designed to automate data workflows and empower teams to build flexible, scalable data architectures. Whether you're implementing a **data mesh**, managing complex data orchestration, or automating CI/CD pipelines, mu-pipelines simplifies the process—no custom code required. With mu-pipelines, teams can focus on business value and innovation, while the platform handles the heavy lifting of integrating, transforming, and delivering data seamlessly across the organization.
 
 ## 🌟 Features
 
